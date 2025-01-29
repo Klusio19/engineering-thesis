@@ -90,10 +90,10 @@ włącznie z tworzeniem scen, harmonogramów oraz automatyzacji.\\
 Aplikacja komunikuje się z mostkiem Philips Hue, który jest fizycznym urządzeniem pełniącym rolę pośrednika pomiędzy oświetleniem a siecią lokalną.
 Bezpośrednia integracja z mostkiem umożliwia:
 \begin{itemize} \item dodawanie nowych żarówek lub innych akcesoriów (np. czujników ruchu, gniazdek) do ekosystemu,
-	\item tworzenie i edytowanie tzw. \textit{scen świetlnych} (zestawów preferowanych ustawień światła, takich jak kolor, jasność czy temperatura barwowa),
-	\item planowanie harmonogramów, pozwalających automatycznie włączać lub wyłączać światło o wybranych porach dnia,
-	\item sterowanie głosowe (po odpowiedniej konfiguracji z asystentami pokroju Amazon Alexa, Apple Siri czy Google Assistant),
-	\item konfigurowanie prostych reguł automatyzacji, które mogą reagować np. na wykrycie ruchu.
+    \item tworzenie i edytowanie tzw. \textit{scen świetlnych} (zestawów preferowanych ustawień światła, takich jak kolor, jasność czy temperatura barwowa),
+    \item planowanie harmonogramów, pozwalających automatycznie włączać lub wyłączać światło o wybranych porach dnia,
+    \item sterowanie głosowe (po odpowiedniej konfiguracji z asystentami pokroju Amazon Alexa, Apple Siri czy Google Assistant),
+    \item konfigurowanie prostych reguł automatyzacji, które mogą reagować np. na wykrycie ruchu.
 \end{itemize}
 Korzystanie z aplikacji Philips Hue pozwala w łatwy sposób zapanować nad całym ekosystemem oświetlenia inteligentnego,
 jednakże nie wspiera ona pomiaru parametrów środowiskowych, takich jak temperatura czy wilgotność.
@@ -148,7 +148,7 @@ oraz sieciami lokalnymi bez konieczności stosowania dodatkowych adapterów.\\
 Płyta oferuje liczne interfejsy wejścia i wyjścia, co czyni ją wyjątkowo wszechstronną w zastosowaniach praktycznych. Na wyposażeniu znajdują się m.in.:
 \begin{itemize}
     \item 40-pinowy złącze GPIO (\textit{General Purpose Input/Output}), które umożliwia podłączanie i sterowanie szeroką gamą urządzeń peryferyjnych,
-	takich jak czujniki, diody LED, przyciski czy serwomechanizmy,
+          takich jak czujniki, diody LED, przyciski czy serwomechanizmy,
     \item 4 porty USB 2.0, umożliwiające podłączenie akcesoriów takich jak klawiatura, mysz, kamera czy pendrive,
     \item złącze HDMI do podłączenia monitora, co pozwala na wykorzystanie urządzenia jako miniaturowego komputera stacjonarnego,
     \item złącze CSI do kamer i DSI do ekranów, co otwiera możliwości budowy systemów monitoringu czy interaktywnych wyświetlaczy,
@@ -203,14 +203,14 @@ FastAPI jest oparty na narzędziu \textit{Starlette} (do obsługi zapytań i tra
 Oferuje funkcjonalności, które czynią go jednym z najpopularniejszych frameworków do budowy API, takich jak:
 \begin{itemize}
     \item Automatyczne generowanie dokumentacji API na podstawie definicji punktów końcowych (\textit{endpoints}) i typów danych.
-	Dokumentacja jest dostępna w formatach \textit{Swagger UI} oraz \textit{ReDoc}, co ułatwia testowanie i integrację API.
+          Dokumentacja jest dostępna w formatach \textit{Swagger UI} oraz \textit{ReDoc}, co ułatwia testowanie i integrację API.
     \item Wsparcie dla typowania w Pythonie, co umożliwia precyzyjne określenie wejściowych i wyjściowych danych dla punktów końcowych.
-	Typowanie pozwala również na automatyczną walidację danych i zmniejsza ryzyko błędów programistycznych.
+          Typowanie pozwala również na automatyczną walidację danych i zmniejsza ryzyko błędów programistycznych.
     \item Obsługa asynchroniczności dzięki natywnemu wsparciu dla konstrukcji \texttt{async} i \texttt{await}, co sprawia,
-	że framework doskonale sprawdza się w aplikacjach wymagających współbieżności, takich jak przetwarzanie danych w czasie rzeczywistym czy obsługa mikroserwisów.
+          że framework doskonale sprawdza się w aplikacjach wymagających współbieżności, takich jak przetwarzanie danych w czasie rzeczywistym czy obsługa mikroserwisów.
     \item Łatwa integracja z systemami autoryzacji i uwierzytelniania, np. przy użyciu protokołów OAuth2 czy JWT (\textit{JSON Web Tokens}).
     \item Rozbudowane wsparcie dla operacji związanych z przetwarzaniem żądań HTTP, takich jak pobieranie danych z parametrów,
-	nagłówków czy plików przesyłanych przez użytkowników.
+          nagłówków czy plików przesyłanych przez użytkowników.
 \end{itemize}
 FastAPI znajduje zastosowanie w wielu obszarach, takich jak:
 \begin{itemize}
@@ -218,7 +218,7 @@ FastAPI znajduje zastosowanie w wielu obszarach, takich jak:
     \item Systemy IoT – FastAPI może być używane jako interfejs do komunikacji między urządzeniami a centralnym serwerem.
     \item Tworzenie RESTful API – pozwala na szybkie i efektywne tworzenie punktów końcowych dla aplikacji webowych czy mobilnych.
     \item Integracja z systemami ML/AI – FastAPI jest często wykorzystywane do udostępniania modeli uczenia maszynowego w formie usług API,
-	umożliwiających ich łatwą integrację z innymi aplikacjami.
+          umożliwiających ich łatwą integrację z innymi aplikacjami.
 \end{itemize}
 Dzięki intuicyjnej składni, bogatej dokumentacji oraz dużej społeczności użytkowników, FastAPI stał się jednym z najchętniej wybieranych narzędzi
 do budowy nowoczesnych aplikacji webowych i API w Pythonie.
@@ -239,25 +239,25 @@ co sprawia, że Kotlin staje się praktycznie nieodzownym elementem ekosystemu A
 Do najważniejszych cech języka Kotlin należą:
 \begin{itemize}
     \item \textbf{Bezpieczeństwo typów} – Kotlin eliminuje ryzyko wystąpienia błędów typu \texttt{NullPointerException} dzięki systemowi \textit{nullable types},
-	który wymaga jawnego oznaczenia zmiennych mogących przechowywać wartość \texttt{null}.
+          który wymaga jawnego oznaczenia zmiennych mogących przechowywać wartość \texttt{null}.
     \item \textbf{Krótszy i czytelniejszy kod} – Kotlin wprowadza nowoczesne konstrukcje składniowe, takie jak wyrażenia lambda, funkcje rozszerzające czy destrukturyzacja,
-	co znacząco zmniejsza ilość kodu wymaganego do implementacji określonych funkcji w porównaniu z Javą.
+          co znacząco zmniejsza ilość kodu wymaganego do implementacji określonych funkcji w porównaniu z Javą.
     \item \textbf{Wsparcie dla programowania funkcyjnego} – język umożliwia tworzenie wyrażeń lambda, operacje na kolekcjach oraz wykorzystanie funkcji wyższego rzędu,
-	co zwiększa elastyczność kodu.
+          co zwiększa elastyczność kodu.
     \item \textbf{Pełna kompatybilność z JVM} – Kotlin działa na maszynie wirtualnej Javy (\textit{Java Virtual Machine}) i może wykorzystywać
-	wszystkie istniejące biblioteki oraz frameworki napisane w Javie.
+          wszystkie istniejące biblioteki oraz frameworki napisane w Javie.
     \item \textbf{Obsługa współbieżności} – Kotlin wprowadza natywne wsparcie dla współbieżności w postaci \textit{coroutines},
-	które umożliwiają łatwiejsze i bardziej efektywne zarządzanie współbieżnymi zadaniami.
+          które umożliwiają łatwiejsze i bardziej efektywne zarządzanie współbieżnymi zadaniami.
     \item \textbf{Wieloplatformowość} – dzięki Kotlin Multiplatform język pozwala na tworzenie wspólnego kodu, który może działać na różnych platformach,
-	takich jak Android, iOS, JVM, JavaScript, a nawet natywne aplikacje desktopowe.
+          takich jak Android, iOS, JVM, JavaScript, a nawet natywne aplikacje desktopowe.
 \end{itemize}
 Kotlin znajduje zastosowanie w wielu dziedzinach:
 \begin{itemize}
     \item \textbf{Tworzenie aplikacji mobilnych} – Kotlin jest obecnie najpopularniejszym językiem do tworzenia aplikacji na system Android dzięki swojej prostocie,
-	wydajności i wsparciu przez Google.
+          wydajności i wsparciu przez Google.
     \item \textbf{Tworzenie aplikacji serwerowych} – Kotlin może być używany z frameworkami takimi jak Ktor czy Spring Boot do budowy nowoczesnych API i aplikacji webowych.
     \item \textbf{Programowanie wieloplatformowe} – Kotlin Multiplatform umożliwia tworzenie wspólnego kodu, który działa zarówno na systemach Android, jak i iOS,
-	co znacząco obniża koszty i czas rozwoju aplikacji.
+          co znacząco obniża koszty i czas rozwoju aplikacji.
     \item \textbf{Aplikacje desktopowe} – dzięki Kotlin/Native można tworzyć aplikacje działające na systemach operacyjnych takich jak Windows, macOS czy Linux.
 \end{itemize}
 Kotlin zdobył uznanie wśród programistów dzięki swojej nowoczesności, elastyczności i możliwościom. Używa go ponad 60\% profesjonalnych programistów Android.
@@ -275,13 +275,13 @@ Do najważniejszych cech Jetpack Compose należą:
 \begin{itemize}
     \item \textbf{Deklaratywne podejście} – interfejsy są definiowane jako funkcje w języku Kotlin, co pozwala na proste i czytelne opisywanie widoków oraz ich zależności.
     \item \textbf{Reaktywność} – framework automatycznie odświeża interfejs użytkownika w odpowiedzi na zmiany w stanie aplikacji,
-	co eliminuje potrzebę ręcznego zarządzania aktualizacjami widoków.
+          co eliminuje potrzebę ręcznego zarządzania aktualizacjami widoków.
     \item \textbf{Komponenty wielokrotnego użytku} – Jetpack Compose oferuje bibliotekę gotowych komponentów, takich jak przyciski, pola tekstowe czy listy,
-	które można łatwo dostosowywać do potrzeb projektu.
+          które można łatwo dostosowywać do potrzeb projektu.
     \item \textbf{Integracja z Jetpack} – Compose współpracuje z innymi bibliotekami wchodzącymi w skład ekosystemu Jetpack, takimi jak
-	\textit{Navigation}, \textit{LiveData} czy \textit{ViewModel}, co ułatwia zarządzanie stanem aplikacji i nawigacją.
+          \textit{Navigation}, \textit{LiveData} czy \textit{ViewModel}, co ułatwia zarządzanie stanem aplikacji i nawigacją.
     \item \textbf{Obsługa wieloplatformowa} – Jetpack Compose jest rozwijany także w wersji \textit{Compose Multiplatform},
-	co umożliwia tworzenie interfejsów użytkownika nie tylko dla Androida, ale również dla innych platform, takich jak \textit{desktop} czy przeglądarki internetowe.
+          co umożliwia tworzenie interfejsów użytkownika nie tylko dla Androida, ale również dla innych platform, takich jak \textit{desktop} czy przeglądarki internetowe.
     \item \textbf{Szybka iteracja} – dzięki funkcji \textit{hot reload} programiści mogą natychmiast zobaczyć efekty wprowadzonych zmian w kodzie interfejsu, co znacznie przyspiesza proces tworzenia aplikacji.
 \end{itemize}
 Jetpack Compose rozwiązuje wiele problemów związanych z tradycyjnym tworzeniem interfejsów w Androidzie,takich jak skomplikowane zarządzanie układami w XML
@@ -302,16 +302,16 @@ Biblioteka DataStore oferuje dwa tryby przechowywania danych:
 \begin{itemize}
     \item \textbf{Preferences DataStore} – przeznaczone do przechowywania prostych danych w formacie klucz-wartość, podobnie jak \textit{SharedPreferences}.
     \item \textbf{Proto DataStore} – pozwalające na przechowywanie bardziej złożonych struktur danych przy użyciu protokołu Protobuf
-	(zalecane w przypadku bardziej rozbudowanych wymagań dotyczących danych).
+          (zalecane w przypadku bardziej rozbudowanych wymagań dotyczących danych).
 \end{itemize}
 Główne cechy DataStore Preferences to:
 \begin{itemize}
     \item \textbf{Asynchroniczność} – operacje zapisu i odczytu danych są wykonywane asynchronicznie przy użyciu Kotlin Coroutines,
-	co zapobiega blokowaniu wątku głównego i poprawia wydajność aplikacji.
+          co zapobiega blokowaniu wątku głównego i poprawia wydajność aplikacji.
     \item \textbf{Reaktywność} – dane są dostępne jako strumienie \textit{Flow}, dzięki czemu można je obserwować i automatycznie reagować na ich zmiany
-	w czasie rzeczywistym.
+          w czasie rzeczywistym.
     \item \textbf{Bezpieczeństwo typów} – dzięki jawnemu definiowaniu typów danych, DataStore zmniejsza ryzyko błędów związanych z niezgodnością typów,
-	co było częstym problemem w \textit{SharedPreferences}.
+          co było częstym problemem w \textit{SharedPreferences}.
     \item \textbf{Prosta implementacja} – DataStore Preferences wykorzystuje intuicyjne API i jest w pełni zintegrowane z ekosystemem Android Jetpack, co umożliwia łatwą integrację z innymi komponentami, takimi jak ViewModel czy LiveData.
 \end{itemize}
 
@@ -424,134 +424,574 @@ i łatwiej integrować aplikacje Android z zewnętrznymi usługami sieciowymi, t
 \clearpage
 
 
-\subsubsection{Rysunki i tabele} \label{Subsec:Rysunki-i-tabele}
-Tekst podstawowy w tabeli pisze się czcionką o rozmiarze 10 punktów, pojedyncza interlinia. Dane liczbowe – wyśrodkowane, dane tekstowe – wyrównane do lewej. Rysunki i tabele zamieszcza się wyśrodkowane na stronie, bez wcięcia pierwszego wiersza.
+\section{Budowa projektu}
+Projekt składa się z dwóch głównych części: części serwera na Raspberry Pi oraz części aplikacji mobilnej. Aplikacja mobilna jest niejako \textit{frontendem}
+dla wykonywanych operacji, podczas gdy faktyczna logika oraz przetwarzanie danych realizowane są przez program uruchomiony na Raspberry Pi. Komunikacja pomiędzy aplikacją
+mobilną a Raspberry Pi odbywa się za pomocą zapytań API wysyłanych do serwera działającego na Raspberry Pi.
 
-W akapicie poprzedzającym rysunek lub tabelę musi znajdować się krótki opis, czego dotyczy dany rysunek/tabela (odniesienie do rysunku/tabeli). Tytuły numeruje się zgodnie z kolejnością w danym rozdziale: numer\_rozdziału.numer\_tabeli/rysunku (np. rys. 2.1, tabela 3.5). W tytule rysunku/tabeli, zaczerpniętych z literatury, podaje się odnośnik do właściwej pozycji. Należy zadbać o to, aby opisy na rysunkach były czytelne (czcionka 8 punktów lub większa). Staraj się nie wymuszać numeracji, pozwól aby robił to za ciebie \LaTeX. Stosuj \verb!\label! do znakowania obiektów, do których być może w tekście się będziesz odwoływał (rozdziały, rysunki, tabele, wzory, listingi \ldots). Odwołuj się do nich w tekście  za pomocą funkcji \verb!\ref{NazwaObiektu}!. Pamiętaj, że \LaTeX\, korzystając z polecenia \verb|latex| nie odczytuje z plików .jpg, .png ich wielkości. Polecenie \verb|latex| generuje plik \verb|DVI|. Jeżeli chcesz go używać zgłosi stosowny błąd. Aby się go pozbyć zdefiniuj wielkość natywną pliku grafiki. Polecamy jednak używanie zamiast polecenia \verb|latex|, polecenie \verb|pdflatex|, wówczas problem nie wystąpi.\\
+Zdecydowano się na taki model działania całego projektu, w celu odciążenia aplikacji mobilnej zainstalowanej na smartfonie użytkownika od ciągłych zapytań do serwera.
+Bezpośrednie przetwarzanie danych przez aplikację mobilną mogłoby negatywnie wpłynąć na wydajność urządzenia oraz zużycie jego akumulatora. Raspberry Pi, będące zwykle
+podłączone do stałego źródła zasilania, stanowi bardziej odpowiednią jednostkę do obsługi intensywnych operacji przetwarzania oraz komunikacji z urządzeniami w ekosystemie Philips Hue.
+Serwer uruchomiony na Raspberry Pi pełni kilka kluczowych funkcji:
+\begin{itemize}
+    \item Obsługuje komunikację z mostkiem Philips Hue, realizując operacje takie jak zmiana koloru, jasności czy stanu oświetlenia.
+    \item Przetwarza dane z czujnika BME280, takie jak temperatura, które mogą być wykorzystywane do wyświetlania kolorów.
+    \item Udostępnia odpowiednio zaprojektowane punkty końcowe API (\textit{endpoints}), które umożliwiają aplikacji mobilnej przesyłanie zapytań w celu realizacji wybranych operacji.
+    \item Zarządza zadaniami w tle, takimi jak dynamiczna zmiana koloru światła w zależności od temperatury, co wymaga ciągłego monitorowania danych.
+\end{itemize}
+Aplikacja mobilna pełni natomiast rolę interfejsu użytkownika, umożliwiając intuicyjne sterowanie żarówkami Philips Hue. Dzięki zastosowanemu modelowi architektury:
+\begin{itemize}
+    \item użytkownik może wykonywać operacje bez konieczności ciągłego przetwarzania danych na urządzeniu mobilnym,
+    \item zmniejszono zapotrzebowanie na zasoby smartfona, takie jak procesor czy bateria,
+    \item zapewniono większą skalowalność systemu, ponieważ serwer na Raspberry Pi może być łatwo rozbudowany o dodatkowe funkcjonalności bez potrzeby modyfikowania aplikacji mobilnej.
+\end{itemize}
+Wybrany model architektury zapewnia elastyczność oraz niezawodność całego systemu, przy jednoczesnym wykorzystaniu zalet urządzeń takich jak Raspberry Pi, które doskonale nadają się do pracy jako serwer w niewielkich projektach IoT (\textit{Internet of Things}). Dzięki temu możliwe było stworzenie rozwiązania, które jest zarówno efektywne, jak i przyjazne dla użytkownika końcowego.
 
-\begin{example}
-	[\ldots] co umożliwia wyznaczenie wartości napięcia. Na rys. \ref{Fig:schemat} przedstawiono schemat obwodu z równolegle dołączoną pojemnością $C_p$.
-\end{example}
-
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=6cm]{figures/fig1.png}
-	\caption{Tytuł rysunku, rozmiar 11 pkt., pojedyncza interlinia, akapit wyśrodkowany, bez wcięcia pierwszego wiersza. Na końcu tytułu rysunku/tabeli nie stawia się kropki [8]}
-	\label{Fig:schemat}
+\subsection{Serwer Raspberry Pi}
+Struktura plików odpowiadająca za serwer na Raspberry Pi wygląda tak jak na \hyperlink{fig:struktura-plików-raspberry}{rysunku} poniżej:
+\begin{figure}[H]
+    \centering
+    \hypertarget{fig:struktura-plików-raspberry}{}
+    \includegraphics[scale=0.8]{figures/struktura-plikow-raspberry-pi.png}
+    \caption{Struktura plików serwera Raspberry Pi}
+    \label{fig:struktura-plików-raspberry}
 \end{figure}
 
-\begin{example}
-	[\ldots] Na rysunku \ref{Fig:wykres} pokazano przykładową zależność prądów pasmowych $i_\mathrm{ph}$ bezszczotkowego silnika prądu stałego z magnesami trwałymi w funkcji położenia wirnika $\theta$.
-\end{example}
-
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=12cm]{figures/fig2.png}
-	\caption{Tytuł rysunku, rozmiar 11 pkt., pojedyncza interlinia, akapit wyśrodkowany, bez wcięcia pierwszego wiersza. Na końcu tytułu rysunku/tabeli nie stawia się kropki [8]}
-	\label{Fig:wykres}
-\end{figure}
-
-
-\begin{example}
-	[\ldots] oraz indukcyjności wzajemnej. W tabeli \ref{Tab:tabela} przedstawiono podstawowe parametry obwodu nieliniowego, zasilanego napięciem trójfazowym.
-\end{example}
-
-\begin{table}[ht]
-	\caption{Tytuł tabeli, rozmiar 11 pkt., pojedyncza interlinia, akapit wyrównany do lewej}
-	\centering
-	\begin{tabular}{|c|c|c|c|c|}
-		\hline
-		$U$ [V] & $I$ [mA] & $R$, [k$\Omega$] & $L$ [mH] & $R/R_{20}$ \\
-		\hline
-		13,6    & 7,29     & 3,94             & 100      & 1,25       \\
-		\hline
-	\end{tabular}
-
-	\label{Tab:tabela}
-\end{table}
-
-{\subsubsection{Listingi programów}}
-
-W pracy dyplomowej możesz umieszczać fragmenty programów. Pamiętaj, aby umieszczać krótkie, tylko najważniejsze fragmenty kodów źródłowych. Zawsze je komentuj w treści
-pracy dyplomowej. Typowo w \LaTeX\ kody źródłowe umieszczane są w środowisku verbatim (\verb|\begin{verbatim}...\end{verbatim}|). Obecnie instnieje jednak bardziej nowoczesne i bardziej funkcjonalne środowisko \verb|lstlisting| (wymaga zainstalowanego w systemie pakietu \verb|listings|). Zwróć uwagę, że możesz kolorować składnię
-automatycznie za pomocą parametru \verb|language|. W niniejszym dokumencie przedstawiono dwa przykłady listingów, Listing \ref{KodMatlab1} to przykład kodu źródłowego Matlaba, a poniżej Listing \ref{KodPerl1} dla Perl'a.\\
-%\komentarz{
-
-\begin{lstlisting}[language=Matlab,caption=Listing programu Matlab,label={KodMatlab1}]
-i = 1
-p = 3
-for i = 1:10
-    if i > 3
-        i=i+p
-    else 
-        i=i+1
-    end
-end
+\subsubsection{.env-example/.env}
+\begin{lstlisting}
+hue-application-key=abcdefg123456
+server-api-key=xyz123
 \end{lstlisting}
 
-\begin{lstlisting}[language=Perl,caption=Listing programu Perl,label={KodPerl1}]
-  my $url ='http://pei.prz.edu.pl';
-  use LWP::Simple;
-  my $content = get $url;
-  die "Couldn't get $url" unless defined $content;
-  print $content;
-  print "\n";
-  print "Length " + length($content)
+Pliki \texttt{.env} oraz \texttt{.env-example} są istotnym elementem konfiguracji serwera uruchamianego na Raspberry Pi, zapewniającym bezpieczeństwo oraz łatwość
+w zarządzaniu kluczami i danymi dostępowymi. Plik \texttt{.env-example} to przykładowy plik wzorcowy, który definiuje, jakie dane konfiguracyjne powinny znaleźć się
+w pliku \texttt{.env}. Zawiera klucze środowiskowe oraz przykładowe wartości, służące jako instrukcja dla użytkownika, który konfiguruje serwer. Plik \texttt{.env}
+to właściwy plik konfiguracyjny, używany podczas uruchamiania serwera. Zawiera rzeczywiste wartości kluczy, które są wymagane do działania serwera. W projekcie pełni
+następujące funkcje:
+
+\begin{itemize}
+    \item \texttt{hue-application-key} – przechowuje klucz aplikacji Philips Hue, który jest niezbędny do wykonywania zapytań do API mostka Philips Hue. Klucz ten pozwala
+          na autoryzację oraz wykonywanie jakichkolwiek poleceń.
+    \item \texttt{server-api-key} – klucz autoryzacyjny wymagany przez serwer FastAPI uruchomiony na Raspberry Pi. Każde żądanie do serwera Raspberry Pi musi zawierać ten
+          klucz w nagłówku, aby zostało zaakceptowane. Mechanizm ten zabezpiecza serwer przed nieautoryzowanym dostępem.
+\end{itemize}
+Pliki \texttt{.env} i \texttt{.env-example} są kluczowymi elementami konfiguracji serwera w projekcie. Dzięki nim zarządzanie wrażliwymi danymi, takimi jak klucze API,
+jest łatwe, bezpieczne i zgodne z nowoczesnymi standardami tworzenia oprogramowania. Plik \texttt{.env-example} pełni rolę dokumentacji dla użytkowników, podczas gdy plik
+\texttt{.env} zawiera rzeczywiste wartości wymagane do uruchomienia serwera.
+
+\subsubsection{setup.py}
+\begin{lstlisting}[language=Python]
+    import hue_mdns_bridge_explorer
+    
+    hue_bridge_explorer = hue_mdns_bridge_explorer.HueBridgeListener()
+    
+    def init():
+        print("Looking for Philips Hue bridges...")
+        hue_bridge_ip_addresses_list = hue_mdns_bridge_explorer.get_hue_bridge_ips()
+        if len(hue_bridge_ip_addresses_list) > 1:
+            print("More than 1 Hue bridge found! Terminating...")
+            quit(0)
+        elif len(hue_bridge_ip_addresses_list) == 0:
+            print("No Hue bridge found! Terminating...")
+            quit(0)
+        else:
+            with open("hue-bridge-ip.txt", "w") as file:
+                file.write(str(hue_bridge_ip_addresses_list[0]))
+                print(f"Hue Bridge found! Its IP address set to: {str(hue_bridge_ip_addresses_list[0])}")
+\end{lstlisting}
+Plik \texttt{setup.py} pełni kluczową rolę w procesie inicjalizacji serwera na Raspberry Pi, umożliwiając automatyczne wykrycie mostka Philips Hue w sieci lokalnej i
+zapisanie jego adresu IP w pliku konfiguracyjnym. Jest to istotny krok w przygotowaniu środowiska pracy, ponieważ adres IP mostka jest wymagany do komunikacji z jego API.
+
+\subsubsection*{Funkcjonalność pliku \texttt{setup.py}}
+\begin{itemize}
+    \item \textbf{Wykrywanie mostków Philips Hue:} Plik wykorzystuje skrypt\\\texttt{hue\_mdns\_bridge\_explorer.py}, który przy pomocy protokołu mDNS przeszukuje
+          sieć lokalną w celu odnalezienia mostków Philips Hue.
+    \item \textbf{Zapis adresu IP:} Po wykryciu mostka jego adres IP jest zapisywany w pliku \texttt{hue-bridge-ip.txt}, który jest później używany przez inne skrypty,
+          takie jak \texttt{server.py}, do komunikacji z mostkiem.
+    \item \textbf{Walidacja wyników:} Plik sprawdza, ile mostków zostało wykrytych. Jeśli znaleziono więcej niż jeden mostek lub żadnego, proces zostaje zatrzymany,
+          a użytkownik jest o tym informowany.
+\end{itemize}
+
+\subsubsection*{Działanie krok po kroku}
+\begin{itemize}
+    \item \textbf{Wykrywanie mostków:} Funkcja \texttt{init()} korzysta z metody\\\texttt{get\_hue\_bridge\_ips()} zaimplementowanej w pliku \texttt{hue\_mdns\_bridge\_explorer.py},
+    aby znaleźć dostępne mostki Hue w sieci lokalnej.
+    \item \textbf{Sprawdzenie liczby mostków:} Jeśli nie znaleziono żadnych mostków lub wykryto ich więcej niż jeden, skrypt kończy działanie, wyświetlając stosowny komunikat. 
+    \item \textbf{Zapis adresu IP:} W przypadku wykrycia dokładnie jednego mostka jego adres IP jest zapisywany w pliku \texttt{hue-bridge-ip.txt}, aby mógł być później używany przez inne skrypty.
+\end{itemize}
+Plik \texttt{setup.py} automatyzuje proces inicjalizacji serwera, zapewniając poprawne skonfigurowanie środowiska pracy. Dzięki automatycznemu wykrywaniu mostka Hue
+izapisowi jego adresu IP, minimalizuje ryzyko błędów ręcznej konfiguracji oraz upraszcza proces uruchamiania projektu.
+
+\subsubsection{hue\_mdns\_bridge\_explorer.py}
+\begin{lstlisting}[language=Python]
+from zeroconf import ServiceBrowser, Zeroconf
+import socket
+import time
+
+class HueBridgeListener:
+    def __init__(self):
+        self.hue_bridge_ips = []
+
+    def remove_service(self, zeroconf: Zeroconf, type_: str, name: str) -> None:
+        pass
+
+    def add_service(self, zeroconf: Zeroconf, type_: str, name: str) -> None:
+        info = zeroconf.get_service_info(type_, name)
+        if info:
+            ip_ = socket.inet_ntoa(info.addresses[0])
+            self.hue_bridge_ips.append(ip_)
+
+    def update_service(self, zeroconf: Zeroconf, type_: str, name: str) -> None:
+        pass
+
+def find_hue_bridges():
+    zeroconf = Zeroconf()
+    _listener = HueBridgeListener()
+    browser = ServiceBrowser(zeroconf, "_hue._tcp.local.", _listener)
+    time.sleep(5)
+    zeroconf.close()
+    return _listener.hue_bridge_ips
+
+def get_hue_bridge_ips():
+    _bridges = find_hue_bridges()
+    return _bridges
+
+if __name__ == '__main__':
+    listener = HueBridgeListener()
+    bridges = get_hue_bridge_ips()
+    for bridge in bridges:
+        print(bridge)
 \end{lstlisting}
 
-Z pewnością przeglądając źródło tego dokumentu zobaczysz, że kody źródłowe powinny mieć zdefiniowane parametry \verb|label|, aby łatwo w tekście do nich się odwoływać.
-Numeracja linii jest w stylu domyślnie włączona (to przydatne, bo w treści pracy łatwo odwołać się dzięki temu do konkretnego wiersza w kodzie źródłowym), możesz je wyłączyć podając jako parametr \verb|numbers=none|. Więcej szczegółów możesz odnaleźć w sekcji \verb|\lstset| pliku arkusza styli.
-%}
+Plik \texttt{hue\_mdns\_bridge\_explorer.py} odpowiada za wyszukiwanie mostków Philips Hue w sieci lokalnej przy użyciu protokołu mDNS (\textit{Multicast DNS}).
+Jest kluczowym komponentem systemu, ponieważ umożliwia dynamiczne wykrywanie urządzeń, eliminując potrzebę ręcznego wprowadzania adresu IP mostka.
+
+\subsubsection*{Funkcjonalność pliku \texttt{hue\_mdns\_bridge\_explorer.py}}
+\begin{itemize}
+    \item \textbf{Przeszukiwanie sieci lokalnej w poszukiwaniu mostków Hue:} Wykorzystuje protokół mDNS do odnajdywania urządzeń, które ogłaszają swoje usługi pod nazwą
+    \texttt{\_hue.\_tcp.local.}
+    \item \textbf{Pobieranie adresów IP wykrytych mostków:} Gdy mostek Hue zostanie wykryty, jego adres IP jest dodawany do listy dostępnych urządzeń.
+    \item \textbf{Obsługa dynamicznych zmian w sieci:} Skrypt nasłuchuje zmiany w dostępnych usługach, dzięki czemu może na bieżąco aktualizować listę wykrytych urządzeń.
+\end{itemize}
 
 
-\subsubsection{Numerowanie i punktowanie}
+\subsubsection*{Działanie krok po kroku}
+\begin{itemize}
+    \item \textbf{Inicjalizacja klasy \texttt{HueBridgeListener}:} Klasa ta jest odpowiedzialna za nasłuchiwanie usług w sieci lokalnej i zapisywanie adresów IP wykrytych mostków Hue.
+    \item \textbf{Obsługa zdarzeń:} Metody \texttt{add\_service()}, \texttt{remove\_service()} oraz \texttt{update\_service()} reagują na zmiany w dostępnych usługach sieciowych.
+    \item \textbf{Wyszukiwanie mostków:} Funkcja \texttt{find\_hue\_bridges()} używa obiektu \texttt{Zeroconf} do przeszukiwania sieci pod kątem usług \texttt{\_hue.\_tcp.local.} i pobiera ich adresy IP.
+    \item \textbf{Udostępnienie listy mostków:} Funkcja \texttt{get\_hue\_bridge\_ips()} zwraca listę wykrytych adresów IP mostków Philips Hue.
+    \item \textbf{Uruchomienie skryptu:} Jeśli plik jest uruchamiany jako główny moduł, skrypt wypisuje na ekranie znalezione mostki.
+\end{itemize}
+Plik \texttt{hue\_mdns\_bridge\_explorer.py} jest wykorzystywany przez inne komponenty systemu, takie jak \texttt{setup.py}, do dynamicznego wykrywania mostka Hue.
+Dzięki zastosowaniu protokołu mDNS użytkownik nie musi ręcznie konfigurować adresu IP urządzenia, co znacząco ułatwia proces instalacji i konfiguracji.
 
-\begin{enumerate}[label=\arabic*), leftmargin=1.25cm]
-	\item Pierwszy poziom (stosuje się numerowanie lub punktowanie). Formatowanie:
-	      akapit wyjustowany, wcięcie od lewej 0,75 cm, wysunięcie co 0,5 cm.
-	\item Znakiem numerowania jest liczba (z kropką lub nawiasem).
-	      \begin{itemize}[label=-,labelsep=0.4cm,leftmargin=0.6cm]
-		      \item drugi poziom (stosuje się wyłącznie punktowanie). Formatowanie: akapit
-		            wyjustowany, wcięcie od lewej 1,25 cm, wysunięcie co 0,5 cm,
-		      \item znakiem punktowania jest łącznik lub mała litera alfabetu (z nawiasem). Nie
-		            zaleca się stosowania kropek, strzałek itp.,
-		      \item punktowane akapity rozpoczyna się minuskułą (małą literą), na końcu akapitu
-		            stawia się przecinek, ostatni punktowany akapit kończy się kropką.
-	      \end{itemize}
-	\item Numerowane akapity rozpoczyna się majuskułą (wielką literą) i kończy kropką.
-	\item Należy zwrócić uwagę, aby nie rozdzielać numerowania/punktowania pomiędzy
-	      kolejnymi stronami tekstu.
-\end{enumerate}
+\subsubsection{color\_conversions.py}
+\begin{lstlisting}[language=Python]
+from rgbxy import Converter
+from rgbxy import GamutC
+from colorsys import hsv_to_rgb
+
+converter = Converter(GamutC)
 
 
-\subsection{Wykaz literatury}
+def hsv2rgb(h, s, v):
+    """Converts hsv(0-1, 0-1, 0-1) to rgb in 0-255 range"""
+    return tuple(round(i * 255) for i in hsv_to_rgb(h, s, v))
 
-W wykazie literatury zamieszcza się wyłącznie pozycje, na które powołano się
-w pracy. Kolejność numerów w wykazie – zgodna z kolejnością pojawiania się danej
-pozycji w tekście.
 
-Format akapitu: akapit wyjustowany, wysunięcie 0,75 cm. Prawidłowo opracowany
-wykaz został zaprezentowany w niniejszym dokumencie w odpowiednim rozdziale, oznaczonym jako „Literatura”  (pozycja nr \cite{str} to zasoby internetowe,
-\cite{Jakubczyk1997} – książka, \cite{Barski2011} – artykuł w czasopiśmie, \cite{dokum} – karta katalogowa).
+def hsv2xy(h, s, v):
+    """Converts hsv (0-1, 0-1, 0-1 ranges) to Philips' Hue xy values (0-1, 0-1)"""
+    _v = v
+    if v <= 0.001:
+        _v = 0.01
+    r, g, b = hsv2rgb(h, s, _v)
+    x, y = converter.rgb_to_xy(r, g, b)
+    return x, y
 
-	{\subsection{Wydruk pracy}}
 
-Przed wydrukiem należy usunąć ewentualne błędy literowe i sprawdzić prawidłową
-interpunkcję. Przykładowo, łącznik zapisuje się za pomocą krótkiego minusa (np.
-badawczo-rozwojowy) natomiast myślnik -- stosowany w zdaniach wtrąconych -- zapisuje
-się za pomocą długiej pauzy. Dzielenie wyrazów według uznania Autora (można podzielić
-długie wyrazy, powodujące duże „rozstrzelenie” tekstu w poprzedzającym wierszu. Zaleca się usunięcie pojedynczych znaków na końcu wiersza oraz podwójnych spacji w tekście.
-Dla przedrostka „mikro” należy unikać stosowania litery „u” zamiast „$\mu$”. Znak „$\mu$” można
-otrzymać przytrzymując lewy Alt i wpisując na klawiaturze numerycznej 0181 (podobnie
-„stopień”: Alt-0176). W celu uniknięcia „rozstrzelenia” liczb i ich jednostek zaleca się
-używanie „twardej” spacji pomiędzy liczbą i jednostką. Należy sprawdzić, czy tytuły
-podrozdziałów/zakresów nie zostały jako pojedyncze wiersze na poprzedniej stronie oraz
-czy rysunki/tabele i ich tytuły nie zostały rozdzielone pomiędzy kolejnymi stronami.
+def rgb2xy(r, g, b):
+    """Converts rgb(0-255, 0-255, 0-255) to Philips' Hue xy values"""
+    if r == 0 and g == 0 and b == 0:
+        return 0, 0
+    x, y = converter.rgb_to_xy(r, g, b)
+    return x, y
 
-Pracę drukuje się dwustronnie. Zaleca się wydruk w kolorze. Przed wydrukiem
-należy ponumerować strony (czcionka 10 pkt., dół strony, akapit wyśrodkowany). Strony
-tytułowej oraz strony z podziękowaniem nie numeruje się. Spis treści rozpoczyna się od
-strony numer 3 (lub 5, jeżeli zamieszczono podziękowania).
+def xy2hex(x, y):
+    """Converts Philips' Hue xy to hex"""
+    hex = converter.xy_to_hex(x, y)
+    return hex
+
+if __name__ == '__main__':
+    print(rgb2xy(255, 0, 255))
+\end{lstlisting}
+Plik \texttt{color\_conversions.py} zawiera zestaw funkcji umożliwiających konwersję kolorów pomiędzy różnymi modelami, takimi jak HSV, RGB i XY. Jest to niezbędne w kontekście integracji
+z systemem Philips Hue, ponieważ mostek Hue operuje na współrzędnych barwowych \texttt{x} i \texttt{y}, zamiast standardowych wartości RGB czy HSV. Do tego różne modele żarówek Philips Hue posiadają
+różne tzw. \textit{gamuty} co jeszcze bardziej komplikuje konwersję kolorów. Do pomocy przy konwersji została użyta bibliteka \textbf{rgbxy}.
+Główne funkcje w tym pliku odpowiadają za konwersję kolorów z modelu HSV na RGB, a następnie na wartości \texttt{x, y}, które mogą być przesłane do API Philips Hue. Dodatkowo umożliwiają
+przekształcenie barw zapisanych w formacie RGB bezpośrednio do współrzędnych \texttt{xy}, co pozwala na precyzyjne odwzorowanie kolorów w inteligentnym oświetleniu. Oprócz tego dostępna jest
+funkcja zamieniająca wartości \texttt{x, y} na reprezentację heksadecymalną, co może być przydatne do wizualizacji aktualnych ustawień oświetlenia. Plik ten zapewnia kompatybilność między
+różnymi modelami kolorów i eliminuje konieczność ręcznego przeliczania wartości, co znacząco ułatwia implementację funkcji zmiany barw w systemie sterowania oświetleniem.
+
+
+\subsubsection{bme280\_utils.py}
+\begin{lstlisting}[language=Python]
+import bme280
+import smbus2
+
+port = 1
+address = 0x76
+bus = smbus2.SMBus(port)
+
+bme280.load_calibration_params(bus, address)
+
+
+def read_temperature():
+    data = bme280.sample(bus, address)
+    return round(data.temperature, 3)
+
+
+def read_pressure():
+    data = bme280.sample(bus, address)
+    return round(data.pressure, 3)
+
+
+def read_humidity():
+    data = bme280.sample(bus, address)
+    return round(data.humidity, 3)
+
+\end{lstlisting}
+Plik \texttt{bme280\_utils.py} zawiera funkcje umożliwiające odczyt danych z czujnika BME280, który mierzy temperaturę, ciśnienie atmosferyczne oraz wilgotność. Komunikacja z czujnikiem odbywa
+się za pośrednictwem magistrali I²C przy użyciu biblioteki \texttt{bme280}. Skrypt inicjalizuje czujnik, ładuje parametry kalibracyjne, a następnie dostarcza trzy główne funkcje:
+\texttt{read\_temperature()}, \texttt{read\_pressure()} oraz \texttt{read\_humidity()}, które zwracają aktualne wartości pomiarowe. Dane te mogą być wykorzystywane np. do dynamicznej zmiany
+ustawień oświetlenia w zależności od temperatury lub do monitorowania warunków środowiskowych. Plik ten pełni kluczową rolę w integracji systemu z rzeczywistymi danymi atmosferycznymi,
+pozwalając na ich łatwe pobieranie i dalsze przetwarzanie przez inne moduły aplikacji.
+
+
+
+\subsubsection{hue\_light\_utils.py}
+\begin{lstlisting}[language=Python]
+import requests as rq
+import json
+import urllib3
+from color_conversions import xy2hex
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
+
+def check_response(response: rq.Response):
+    if (response.status_code != 200) and (response.status_code != 207):
+        print(f'There is something wrong with the Philips Hue API call! Status code: {response.status_code}')
+
+
+def powered_on(header, light_id, bridge_ip):
+    light_url = f"https://{bridge_ip}/clip/v2/resource/light/{light_id}"
+    r = rq.get(url=light_url, headers=header, verify=False)
+    check_response(r)
+    response_json = r.json()
+    light_on = response_json['data'][0]['on']['on']
+    if light_on:
+        return True
+    else:
+        return False
+
+
+def switch_power(header, light_id, bridge_ip):
+    light_url = f"https://{bridge_ip}/clip/v2/resource/light/{light_id}"
+    payload_on = json.dumps({
+        "on": {
+            "on": True
+        }
+    })
+
+    payload_off = json.dumps({
+        "on": {
+            "on": False
+        }
+    })
+    if powered_on(header, light_id, bridge_ip):
+        r = rq.put(url=light_url, headers=header, data=payload_off, verify=False)
+        check_response(r)
+        return {"message": "OK"}
+    else:
+        r = rq.put(url=light_url, headers=header, data=payload_on, verify=False)
+        check_response(r)
+        return {"message": "OK"}
+
+
+def turn_on(header, light_id, bridge_ip):
+    if powered_on(header, light_id, bridge_ip):
+        return {"message": "Already turned on!"}
+    else:
+        light_url = f"https://{bridge_ip}/clip/v2/resource/light/{light_id}"
+        payload = json.dumps({
+            "on": {
+                "on": True
+            }
+        })
+        r = rq.put(url=light_url, headers=header, data=payload, verify=False)
+        check_response(r)
+        return {"message": "OK"}
+
+
+def turn_off(header, light_id, bridge_ip):
+    if not powered_on(header, light_id, bridge_ip):
+        return {"message": "Already turned off!"}
+    else:
+        light_url = f"https://{bridge_ip}/clip/v2/resource/light/{light_id}"
+        payload = json.dumps({
+            "on": {
+                "on": False
+            }
+        })
+        r = rq.put(url=light_url, headers=header, data=payload, verify=False)
+        check_response(r)
+        return {"message": "OK"}
+
+
+def change_brightness(header, light_id, level, bridge_ip):
+    level_int = (round(level, 2) * 100)
+
+    if level_int > 100:
+        level_int = 100
+    elif level_int < 0:
+        level_int = 0
+
+    light_url = f"https://{bridge_ip}/clip/v2/resource/light/{light_id}"
+    payload = json.dumps({
+        "dimming": {
+            "brightness": level_int
+        }
+    })
+    r = rq.put(url=light_url, headers=header, data=payload, verify=False)
+    check_response(r)
+    return {"message": "OK"}
+
+
+def change_color(header, light_id, bridge_ip, x, y):
+    light_url = f"https://{bridge_ip}/clip/v2/resource/light/{light_id}"
+    r = rq.put(url=light_url, headers=header,
+                json={
+                    "color": {
+                        "xy": {
+                            "x": x,
+                            "y": y
+                        }
+                    }
+                }, verify=False)
+    check_response(r)
+    return {"message": "OK"}
+
+
+def get_full_lights(header, bridge_ip):
+    base_url = f"https://{bridge_ip}/clip/v2/resource"
+    devices_url = f"{base_url}/device"
+    
+    # First GET request to retrieve all light devices which returns only "rid" and "name" 
+    response = rq.get(url=devices_url, headers=header, verify=False)
+    lights = []
+    
+    check_response(response)
+    
+    response_data = response.json()
+    for device in response_data.get("data", []):
+        for service in device.get("services", []):
+            if service.get("rtype") == "light":
+                light_rid = service["rid"]
+                
+                # Second GET request for detailed light information
+                light_url = f"{base_url}/light/{light_rid}"
+                light_response = rq.get(url=light_url, headers=header, verify=False)
+                
+                if (light_response.status_code != 200 and light_response.status_code != 207):
+                    print("Error fetching light details:", light_response.status_code, light_response.text)
+                    brightness = None
+                    is_on: bool = None
+                    color_hex = None
+
+                light_data = light_response.json().get("data", [])[0]
+                brightness = light_data.get("dimming", {}).get("brightness")
+                is_on = light_data.get("on", {}).get("on")
+                xy_color = light_data.get("color", {}).get("xy")
+                color_hex = xy2hex(xy_color["x"], xy_color["y"]) if xy_color else None
+                name = device["metadata"]["name"]
+
+                light_info = {
+                    "rid": light_rid,
+                    "name": name,
+                    "brightness": brightness,
+                    "isOn": is_on,
+                    "color": f"#{color_hex}",
+                }
+                lights.append(light_info)
+    return lights
+
+
+def get_light_details(header, bridge_ip, light_id):
+    light_url = f"https://{bridge_ip}/clip/v2/resource/light/{light_id}"
+    response = rq.get(url=light_url, headers=header, verify=False)
+    
+    print(response.status_code)
+    if (response.status_code != 200 and response.status_code != 207):
+        print("Error fetching light details:", response.status_code, response.text)
+        return None
+
+    light_data = response.json().get("data", [])[0]  # Get the first light data object
+    
+    brightness_float_100_range = light_data.get("dimming", {}).get("brightness")
+    brightness_float_1_range = round((brightness_float_100_range/100), 2)
+    name = light_data.get("metadata", {}).get("name")
+    is_on = light_data.get("on", {}).get("on")
+    xy_color = light_data.get("color", {}).get("xy")
+    color_hex = xy2hex(xy_color["x"], xy_color["y"]) if xy_color else None
+
+
+    light_info = {
+        "rid": light_id,
+        "name": name,
+        "brightness": brightness_float_1_range,
+        "isOn": is_on,
+        "color": f"#{color_hex}",
+    }
+
+    return light_info
+    
+\end{lstlisting}
+Plik \texttt{hue\_light\_utils.py} zawiera zestaw funkcji odpowiedzialnych za komunikację serwera z mostkiem Philips Hue poprzez jego API. Definiuje zapytania HTTP umożliwiające sterowanie
+inteligentnym oświetleniem, w tym włączanie i wyłączanie świateł, zmianę jasności, kolorów oraz pobieranie szczegółowych informacji o stanie poszczególnych źródeł światła. Wszystkie operacje są
+realizowane za pomocą żądań \texttt{GET} i \texttt{PUT}, wysyłanych do odpowiednich endpointów mostka Philips Hue. Plik wykorzystuje bibliotekę \texttt{requests} do obsługi połączeń HTTP, a
+także umożliwia konwersję danych kolorystycznych do formatu \texttt{xy}, wymaganego przez API Hue. Dodatkowo zawiera funkcję sprawdzającą odpowiedzi serwera i informującą o ewentualnych błędach
+w komunikacji. Moduł ten stanowi kluczowy element systemu sterowania oświetleniem, pozwalając na łatwą integrację funkcji związanych z inteligentnym oświetleniem oraz zapewniając płynną komunikację
+między serwerem a urządzeniami Hue.
+
+\subsubsection{light\_functions.py}
+\begin{lstlisting}[language=Python]
+def translate_temperature_to_hsv_color(input_temp, temp_min, temp_max, hsv_color_min, hsv_color_max):
+if input_temp <= temp_min:
+    return hsv_color_min
+if input_temp >= temp_max:
+    return hsv_color_max
+
+# Determine the range of the input temperatures
+temp_span = temp_max - temp_min
+
+# Scale the temperature into a 0-1 range
+value_scaled = float(input_temp - temp_min) / float(temp_span)
+
+# Handle the circular nature of the hue
+if hsv_color_min <= hsv_color_max:
+    # Normal case, no wrapping needed
+    hue_color_span = hsv_color_max - hsv_color_min
+    return hsv_color_min + (value_scaled * hue_color_span)
+else:
+    # Wrapping case
+    hue_color_span = (1 - hsv_color_min) + hsv_color_max
+    hue = hsv_color_min + (value_scaled * hue_color_span)
+    if hue > 1:  # Wrap around the circle
+        hue -= 1
+    return hue
+\end{lstlisting}
+Plik \texttt{light\_functions.py} zawiera funkcję umożliwiającą dynamiczne przekształcanie temperatury otoczenia na wartość koloru w przestrzeni HSV. Funkcja\\ \texttt{translate\_temperature\_to\_hsv\_color()}
+przyjmuje wartości minimalnej i maksymalnej temperatury oraz odpowiadające im kolory w modelu HSV. Na tej podstawie dokonuje interpolacji, aby dla danej temperatury zwrócić odpowiednią wartość koloru,
+uwzględniając cykliczną naturę skali barw HSV. Moduł ten umożliwia tworzenie dynamicznych efektów świetlnych opartych na rzeczywistych danych pomiarowych, co pozwala na inteligentne dostosowanie
+oświetlenia do aktualnych warunków otoczenia.
+
+\subsubsection{task\_manager.py}
+\begin{lstlisting}[language=Python]
+class TaskManager:
+def __init__(self):
+    self.tasks = {}
+
+def start_task(self, light_id: str, task: callable, *args, **kwargs):
+    if light_id in self.tasks:
+        raise ValueError(f"A task is already running for light_id {light_id}.")
+    self.tasks[light_id] = True
+    task(*args, **kwargs)
+
+def stop_task(self, light_id: str):
+    if light_id in self.tasks:
+        self.tasks[light_id] = False
+        del self.tasks[light_id]
+
+def is_task_running(self, light_id: str) -> bool:
+    return self.tasks.get(light_id, False)
+
+
+task_manager = TaskManager()
+\end{lstlisting}
+Plik \texttt{task\_manager.py} zawiera implementację klasy \texttt{TaskManager}, która odpowiada za zarządzanie zadaniami wykonywanymi w tle. Klasa ta umożliwia uruchamianie, zatrzymywanie oraz
+monitorowanie zadań związanych ze sterowaniem oświetleniem Philips Hue. \texttt{TaskManager} przechowuje informacje o aktualnie wykonywanych procesach dla poszczególnych świateł, zapobiegając
+ich jednoczesnemu uruchamianiu. Jest to szczególnie istotne w kontekście dynamicznych funkcji, takich jak automatyczna zmiana koloru w zależności od temperatury. Klasa ta jest wykorzystywana w pliku
+\texttt{server.py}, gdzie pozwala na kontrolowanie działania długotrwałych procesów związanych z oświetleniem. Dzięki niej możliwe jest bezpieczne i kontrolowane zarządzanie stanem świateł,
+bez ryzyka kolizji między operacjami.
+
+\subsubsection{server.py}
+Plik \texttt{server.py} stanowi główną część serwera aplikacji, który został zbudowany przy użyciu frameworka FastAPI. Serwer ten obsługuje żądania HTTP i umożliwia komunikację między klientem
+a mostkiem Philips Hue, umożliwiając sterowanie inteligentnym oświetleniem. Plik integruje różne moduły, w tym \texttt{hue\_light\_utils.py} do wysyłania żądań do mostka Hue, \texttt{bme280\_utils.py}
+do pobierania danych z czujnika BME280 oraz \texttt{task\_manager.py} do zarządzania długotrwałymi procesami. Serwer implementuje mechanizm uwierzytelniania za pomocą klucza API, co zabezpiecza
+dostęp do funkcji sterujących oświetleniem. Obsługuje różne operacje, takie jak włączanie i wyłączanie świateł, zmiana ich jasności, kolorów oraz dynamiczne dostosowywanie barwy światła na podstawie temperatury. 
+
+\subsubsection*{Przykładowa funkcja: \texttt{turn\_on()}}
+\noindent Jednym z endpointów dostępnych w serwerze jest funkcja \texttt{turn\_on()}, która odpowiada za włączanie światła o określonym identyfikatorze. 
+
+\begin{lstlisting}[language=Python]
+@app.get("/turn-on/{light_id}")
+async def turn_on(light_id: str, api_key: str = Security(get_api_key)):
+    _header = {"hue-application-key": hue_api_key}
+    response = hue_light_utils.turn_on(header=_header, light_id=light_id, bridge_ip=hue_bridge_ip_address)
+    if response.get("message") == "OK":
+        return {"message": "Turned on!"}
+    elif response.get("message") == "Already turned on!":
+        return {"message": "Already turned on!"}
+    else:
+        return {"message": "Something's wrong!"}, 500
+\end{lstlisting}
+Funkcja ta przyjmuje identyfikator światła jako parametr ścieżki oraz sprawdza poprawność klucza API. Następnie tworzy nagłówek uwierzytelniający, który jest wymagany przez mostek Hue,
+i wywołuje metodę \texttt{turn\_on()} zdefiniowaną w \texttt{hue\_light\_utils.py}. Na podstawie odpowiedzi API zwraca komunikat informujący o powodzeniu operacji lub ewentualnym błędzie.\\
+Plik \texttt{server.py} pełni rolę centralnego elementu aplikacji, umożliwiającego komunikację między klientem a mostkiem Philips Hue. Dzięki zastosowaniu FastAPI i podziałowi na moduły
+zapewnia wydajną obsługę żądań oraz elastyczność w zarządzaniu inteligentnym oświetleniem.
+
+\subsubsection{ main.py}
+\begin{lstlisting}[language=Python]
+import subprocess
+import setup
+import hue_mdns_bridge_explorer
+
+if __name__ == "__main__":
+    hue_bridge_explorer = hue_mdns_bridge_explorer.HueBridgeListener()
+    setup.init()
+
+    command = [
+        "uvicorn",
+        "server:app",
+        "--host", "0.0.0.0",
+        "--port", "8000",
+    ]
+
+    print(f"Running command: \"{' '.join(command)}\"")
+
+    subprocess.run(command, check=True)
+\end{lstlisting}
+Plik \texttt{main.py} pełni rolę punktu wejściowego do uruchomienia serwera aplikacji. Jego zadaniem jest przygotowanie środowiska, w tym inicjalizacja konfiguracji mostka Philips Hue,
+a następnie uruchomienie serwera FastAPI. Na początku skrypt wywołuje funkcję \texttt{init()} z pliku \texttt{setup.py}, która automatycznie wykrywa adres IP mostka Philips Hue i zapisuje
+go w pliku konfiguracyjnym. Następnie definiowana jest komenda do uruchomienia serwera przy użyciu frameworka \texttt{Uvicorn}, który jest asynchronicznym serwerem HTTP przeznaczonym do obsługi
+aplikacji FastAPI. Serwer zostaje uruchomiony na wszystkich interfejsach sieciowych urządzenia (\texttt{0.0.0.0}) na porcie 8000. Po wykryciu mostka Hue i zapisaniu jego adresu IP, skrypt uruchamia
+serwer FastAPI, który nasłuchuje na porcie 8000. Dzięki temu serwer jest gotowy do obsługi zapytań związanych ze sterowaniem oświetleniem.
+
+Plik \texttt{main.py} pełni funkcję inicjalizacyjną i uruchamiającą serwer aplikacji. Automatyzuje proces konfiguracji mostka Philips Hue oraz uruchamia serwer FastAPI, zapewniając gotowe
+środowisko do obsługi żądań HTTP związanych ze sterowaniem inteligentnym oświetleniem.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \clearpage
 
@@ -574,14 +1014,14 @@ Według potrzeb zawarte i uporządkowane uzupełnienie pracy o dowolny materiał
 \addcontentsline{toc}{section}{Literatura}
 
 \begin{thebibliography}{4}
-	\bibitem{popularność-smart-home} https://www.statista.com/forecasts/887613/number-of-smart-homes-in-the-smart-home-market-in-the-world
-	\bibitem{bme280-datasheet} https://www.mouser.com/datasheet/2/783/BST-BME280-DS002-1509607.pdf
-	\bibitem{kotlin-data-wydania} https://kotlinlang.org/docs/faq.html
-	\bibitem{kotlin-popularność} https://developer.android.com/kotlin
-	\bibitem{Jakubczyk1997} Jakubczyk T., Klette A.: Pomiary w akustyce. WNT, Warszawa 1997.
-	\bibitem{Barski2011} Barski S.: Modele transmitancji. Elektronika praktyczna, nr 7/2011, str. 15-18.
-	\bibitem{dokum} Czujnik S200. Dokumentacja techniczno-ruchowa. Lumel, Zielona Góra, 2001.
-	\bibitem{Pawluk2001} Pawluk K.: Jak pisać teksty techniczne poprawnie, Wiadomości Elektrotechniczne, Nr 12, 2001, str. 513-515.
+    \bibitem{popularność-smart-home} https://www.statista.com/forecasts/887613/number-of-smart-homes-in-the-smart-home-market-in-the-world
+    \bibitem{bme280-datasheet} https://www.mouser.com/datasheet/2/783/BST-BME280-DS002-1509607.pdf
+    \bibitem{kotlin-data-wydania} https://kotlinlang.org/docs/faq.html
+    \bibitem{kotlin-popularność} https://developer.android.com/kotlin
+    \bibitem{Jakubczyk1997} Jakubczyk T., Klette A.: Pomiary w akustyce. WNT, Warszawa 1997.
+    \bibitem{Barski2011} Barski S.: Modele transmitancji. Elektronika praktyczna, nr 7/2011, str. 15-18.
+    \bibitem{dokum} Czujnik S200. Dokumentacja techniczno-ruchowa. Lumel, Zielona Góra, 2001.
+    \bibitem{Pawluk2001} Pawluk K.: Jak pisać teksty techniczne poprawnie, Wiadomości Elektrotechniczne, Nr 12, 2001, str. 513-515.
 \end{thebibliography}
 
 \clearpage
