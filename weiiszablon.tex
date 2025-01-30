@@ -35,8 +35,10 @@
 %%% promotor ze stopniami naukowymi po angielsku
 \supervisorEN{Mariusz Mączka, BEng, PhD}
 
-\abstract{Treść streszczenia po polsku}
-\abstractEN{Treść streszczenia po angielsku}
+\abstract{Projekt HuePi to aplikacja mobilna umożliwiająca sterowanie oświetleniem Philips Hue przez serwer na Raspberry Pi. Wykorzystuje nowoczesne technologie, takie jak
+FastAPI, Retrofit i Jetpack Compose. Umożliwia zarządzanie światłami, regulację jasności, zmianę kolorów oraz dynamiczne dostosowanie barwy do temperatury otoczenia.}
+\abstractEN{The HuePi project is a mobile app for controlling Philips Hue lighting via a Raspberry Pi server. It employs modern technologies such as FastAPI, Retrofit, and Jetpack Compose.
+The app enables light management, brightness control, color adjustments, and dynamic color adaptation based on ambient temperature.}
 
 \begin{document}
 
@@ -98,7 +100,7 @@ Bezpośrednia integracja z mostkiem umożliwia:
 Korzystanie z aplikacji Philips Hue pozwala w łatwy sposób zapanować nad całym ekosystemem oświetlenia inteligentnego,
 jednakże nie wspiera ona pomiaru parametrów środowiskowych, takich jak temperatura czy wilgotność.
 W efekcie, choć zaspokaja większość typowych potrzeb związanych z inteligentnym oświetleniem,
-nie rozszerza funkcjonalności systemu o dodatkowe odczyty czy też automatyzacje bazujące na czynnikach zewnętrznych (m.in. z użyciem czujników temperatury).
+nie rozszerza funkcjonalności systemu o dodatkowe odczyty czy też automatyzacje bazujące na czynnikach zewnętrznych (m.in. z użyciem czujników temperatury). \cite{dokumentacja-philips-hue-app}
 
 \subsubsection{Home Assistant}
 Home Assistant to otwartoźródłowe oprogramowanie przeznaczone do lokalnego zarządzania i automatyzacji urządzeń w inteligentnym domu.
@@ -114,7 +116,7 @@ przeglądać ich status, a także dostosowywać interfejs użytkownika zgodnie z
 Ze względu na swoją otwartość i rozbudowaną społeczność, umożliwia wprowadzanie dodatkowych wtyczek (\textit{add-ons})
 i komponentów, co sprawia, że możliwości systemu są praktycznie nieograniczone.
 Duża liczba gotowych rozwiązań udostępnianych w formie repozytoriów społecznościowych pozwala
-szybko uruchamiać nowe funkcjonalności lub modyfikować istniejące.
+szybko uruchamiać nowe funkcjonalności lub modyfikować istniejące. \cite{dokumentacja-home-assistant}
 
 \subsubsection{Google Home}
 Google Home to platforma i aplikacja mobilna rozwijana przez firmę Google, służąca do zarządzania urządzeniami inteligentnego domu.
@@ -128,7 +130,7 @@ W przeciwieństwie do bardziej zaawansowanych platform otwartoźródłowych, Goo
 Oferuje co prawda możliwość definiowania automatyzacji – tzw. \textit{Routines} – jednak nie pozwala na tak rozbudowane scenariusze integracji,
 jak systemy pokroju Home Assistant. Niemniej jednak dzięki swojemu podejściu „wszystko w jednym” i ścisłemu powiązaniu z usługami Google,
 Google Home jest dobrym wyborem dla użytkowników szukających łatwego w konfiguracji i intuicyjnego rozwiązania do codziennego sterowania oświetleniem Philips Hue,
-jak również innymi urządzeniami typu \textit{Smart Home}.
+jak również innymi urządzeniami typu \textit{Smart Home}. \cite{dokumentacja-google-home}
 
 \clearpage
 
@@ -202,7 +204,7 @@ lub intensywnej komunikacji z zewnętrznymi usługami.
 FastAPI jest oparty na narzędziu \textit{Starlette} (do obsługi zapytań i trasowania) oraz \textit{Pydantic} (do walidacji i serializacji danych).
 Oferuje funkcjonalności, które czynią go jednym z najpopularniejszych frameworków do budowy API, takich jak:
 \begin{itemize}
-    \item Automatyczne generowanie dokumentacji API na podstawie definicji punktów końcowych (\textit{endpoints}) i typów danych.
+    \item Automatyczne generowanie dokumentacji API na podstawie definicji punktów końcowych (\textit{endpoints}) i typów danych. \cite{fastapi-automatyczna-dokumentacja}
           Dokumentacja jest dostępna w formatach \textit{Swagger UI} oraz \textit{ReDoc}, co ułatwia testowanie i integrację API.
     \item Wsparcie dla typowania w Pythonie, co umożliwia precyzyjne określenie wejściowych i wyjściowych danych dla punktów końcowych.
           Typowanie pozwala również na automatyczną walidację danych i zmniejsza ryzyko błędów programistycznych.
@@ -286,7 +288,7 @@ Do najważniejszych cech Jetpack Compose należą:
 \end{itemize}
 Jetpack Compose rozwiązuje wiele problemów związanych z tradycyjnym tworzeniem interfejsów w Androidzie,takich jak skomplikowane zarządzanie układami w XML
 czy konieczność ręcznego obsługiwania zmian w widokach. Umożliwia budowanie nowoczesnych i estetycznych interfejsów przy jednoczesnym zmniejszeniu ilości kodu
-oraz uproszczeniu procesu tworzenia aplikacji.\\
+oraz uproszczeniu procesu tworzenia aplikacji.\cite{jetpack-compose-mniej-kodu}\\
 W porównaniu z tradycyjnym podejściem opartym na Javie i XML, Jetpack Compose w połączeniu z językiem Kotlin oferuje znacznie większą produktywność i przejrzystość kodu.
 W Kotlinie deklaratywne definiowanie interfejsów pozwala uniknąć zbędnego kodu „klejącego” (tzw. \textit{boilerplate code}), który był często niezbędny w Javie
 do wiązania widoków XML z logiką aplikacji. Kotlin wprowadza funkcje rozszerzające, lambdy i programowanie funkcyjne, co czyni kod bardziej zwięzłym i łatwiejszym w utrzymaniu.
@@ -355,7 +357,7 @@ i stabilne aplikacje, które lepiej spełniają wymagania współczesnych użytk
 Retrofit to nowoczesna biblioteka open-source opracowana przez firmę Square, która służy do komunikacji z serwerami RESTful poprzez wykonywanie żądań HTTP.
 Retrofit ułatwia integrację aplikacji Android z zewnętrznymi API, zapewniając prosty i wydajny sposób na wykonywanie zapytań sieciowych oraz przetwarzanie ich odpowiedzi.\\
 Główną zaletą biblioteki Retrofit jest jego modułowość i łatwość w użyciu. Biblioteka automatyzuje wiele aspektów komunikacji sieciowej, takich jak serializacja
-i deserializacja danych, obsługa różnych typów żądań HTTP (\texttt{GET}, \texttt{POST}, \texttt{PUT}, \texttt{DELETE}) oraz zarządzanie nagłówkami i parametrami zapytań.
+i deserializacja danych, obsługa różnych typów żądań HTTP (\texttt{GET}, \texttt{POST}, \texttt{PUT}, \texttt{DELETE}) oraz zarządzanie nagłówkami i parametrami zapytań.\cite{retrofit}
 
 \subsubsection*{Cechy biblioteki Retrofit}
 \begin{itemize}
@@ -391,6 +393,7 @@ val retrofit = Retrofit.Builder()
 val apiService: ApiService = retrofit.create(ApiService::class.java)
 \end{lstlisting}
 
+\clearpage
 \textbf{Wykonywanie zapytań:}
 \begin{lstlisting}[language=Kotlin]
 import kotlinx.coroutines.CoroutineScope
@@ -445,7 +448,8 @@ Aplikacja mobilna pełni natomiast rolę interfejsu użytkownika, umożliwiając
     \item zmniejszono zapotrzebowanie na zasoby smartfona, takie jak procesor czy bateria,
     \item zapewniono większą skalowalność systemu, ponieważ serwer na Raspberry Pi może być łatwo rozbudowany o dodatkowe funkcjonalności bez potrzeby modyfikowania aplikacji mobilnej.
 \end{itemize}
-Wybrany model architektury zapewnia elastyczność oraz niezawodność całego systemu, przy jednoczesnym wykorzystaniu zalet urządzeń takich jak Raspberry Pi, które doskonale nadają się do pracy jako serwer w niewielkich projektach IoT (\textit{Internet of Things}). Dzięki temu możliwe było stworzenie rozwiązania, które jest zarówno efektywne, jak i przyjazne dla użytkownika końcowego.
+Wybrany model architektury zapewnia elastyczność oraz niezawodność całego systemu, przy jednoczesnym wykorzystaniu zalet urządzeń takich jak Raspberry Pi, które doskonale nadają się do pracy
+jako serwer w niewielkich projektach IoT (\textit{Internet of Things}). Dzięki temu możliwe było stworzenie rozwiązania, które jest zarówno efektywne, jak i przyjazne dla użytkownika końcowego.
 
 \subsection{Serwer Raspberry Pi}
 Struktura plików odpowiadająca za serwer na Raspberry Pi wygląda tak jak na \hyperlink{fig:struktura-plików-raspberry}{rysunku} poniżej:
@@ -479,6 +483,7 @@ Pliki \texttt{.env} i \texttt{.env-example} są kluczowymi elementami konfigurac
 jest łatwe, bezpieczne i zgodne z nowoczesnymi standardami tworzenia oprogramowania. Plik \texttt{.env-example} pełni rolę dokumentacji dla użytkowników, podczas gdy plik
 \texttt{.env} zawiera rzeczywiste wartości wymagane do uruchomienia serwera.
 
+\clearpage
 \subsubsection{setup.py}
 \begin{lstlisting}[language=Python]
     import hue_mdns_bridge_explorer
@@ -950,6 +955,7 @@ i wywołuje metodę \texttt{turn\_on()} zdefiniowaną w \texttt{hue\_light\_util
 Plik \texttt{server.py} pełni rolę centralnego elementu aplikacji, umożliwiającego komunikację między klientem a mostkiem Philips Hue. Dzięki zastosowaniu FastAPI i podziałowi na moduły
 zapewnia wydajną obsługę żądań oraz elastyczność w zarządzaniu inteligentnym oświetleniem.
 
+\clearpage
 \subsubsection{ main.py}
 \begin{lstlisting}[language=Python]
 import subprocess
@@ -980,34 +986,727 @@ serwer FastAPI, który nasłuchuje na porcie 8000. Dzięki temu serwer jest goto
 Plik \texttt{main.py} pełni funkcję inicjalizacyjną i uruchamiającą serwer aplikacji. Automatyzuje proces konfiguracji mostka Philips Hue oraz uruchamia serwer FastAPI, zapewniając gotowe
 środowisko do obsługi żądań HTTP związanych ze sterowaniem inteligentnym oświetleniem.
 
+\clearpage
+
+\subsection{Aplikacja mobilna}
+Poniższy \hyperlink{fig:struktura-plików-aplikacja-mobilna}{rysunek} przedstawia strukturę plików projektu.
+
+\begin{figure}[H]
+    \centering
+    \hypertarget{fig:struktura-plików-aplikacja-mobilna}{}
+    \includegraphics[scale=0.8]{figures/struktura-plikow-aplikacja-mobilna.png}
+    \caption{Struktura plików projektu aplikacji mobilnej}
+    \label{fig:struktura-plików-raspberry}
+\end{figure}
+
+
+Aplikacja mobilna HuePi została stworzona w języku Kotlin i wykorzystuje nowoczesne technologie oraz wzorce projektowe stosowane w aplikacjach na system Android. Jej głównym
+celem jest umożliwienie użytkownikowi wygodnego sterowania inteligentnym oświetleniem Philips Hue poprzez komunikację z serwerem uruchomionym na Raspberry Pi. 
+
+\subsubsection*{Architektura aplikacji}
+Aplikacja została zaprojektowana zgodnie z wzorcem \textit{MVVM (Model-View-ViewModel)}, który zapewnia lepszą separację logiki biznesowej od interfejsu użytkownika. Struktura kodu została podzielona na trzy główne warstwy:
+\begin{itemize}
+    \item \textbf{Model} – zawiera definicje klas danych, takich jak reprezentacje żarówek (\texttt{LightBulb.kt}) oraz odpowiedzi serwera na zmiany stanu świateł.
+    \item \textbf{View} – oparta na \textbf{Jetpack Compose}, odpowiada za warstwę interfejsu użytkownika, umożliwiając dynamiczne tworzenie widoków w sposób deklaratywny.
+    \item \textbf{ViewModel} – pośredniczy między widokiem a warstwą modelu, zarządza stanem aplikacji i obsługuje logikę biznesową.
+\end{itemize}
+
+\subsubsection*{Interfejs użytkownika – Jetpack Compose}
+Do budowy interfejsu aplikacji wykorzystano \textbf{Jetpack Compose}, który umożliwia deklaratywne definiowanie komponentów UI oraz elastyczne zarządzanie stanem. Dzięki temu
+aplikacja jest bardziej responsywna, a kod jest czytelniejszy i łatwiejszy w utrzymaniu w porównaniu do tradycyjnego podejścia opartego na plikach XML.
+
+\subsubsection*{Komunikacja z serwerem Raspberry Pi}
+Aplikacja wykorzystuje bibliotekę \textbf{Retrofit}, aby komunikować się z serwerem uruchomionym na Raspberry Pi, który zarządza mostkiem Philips Hue oraz czujnikiem BME280. Wysyłane żądania HTTP pozwalają na:
+\begin{itemize}
+    \item włączanie i wyłączanie żarówek,
+    \item zmianę jasności oraz koloru świateł,
+    \item odczytywanie aktualnego stanu żarówek,
+\end{itemize}
+
+\subsubsection*{Obsługa nawigacji}
+Za zarządzanie przejściami między ekranami odpowiada moduł \textbf{Jetpack Compose Navigation}, który definiuje dostępne ścieżki oraz obsługuje przechodzenie między poszczególnymi ekranami
+aplikacji. Każdy ekran aplikacji został wydzielony do osobnego modułu w katalogu \texttt{presentation/screens}, co ułatwia organizację kodu oraz jego rozbudowę.
+
+\subsubsection*{Przechowywanie danych}
+Do zarządzania lokalnymi ustawieniami aplikacji wykorzystano bibliotekę \textbf{DataStore Preferences}, która zastępuje starszy mechanizm \textit{SharedPreferences}.
+Pozwala to na bezpieczne i wydajne przechowywanie preferencji użytkownika, takich jak ostatnio wybrana żarówka czy stan połączenia z serwerem.
+
+\subsubsection*{Struktura aplikacji}
+\noindent Aplikacja została podzielona na logiczne moduły, w tym:
+\begin{itemize}
+    \item \texttt{model} – definiuje struktury danych wykorzystywane w aplikacji,
+    \item \texttt{presentation} – zawiera komponenty UI oraz ekrany aplikacji,
+    \item \texttt{retrofit} – obsługuje komunikację z serwerem przy użyciu Retrofit,
+    \item \texttt{navigation} – odpowiada za system nawigacji pomiędzy ekranami,
+    \item \texttt{utils} – zawiera klasy pomocnicze, takie jak \texttt{DataStoreManager} do obsługi ustawień użytkownika,
+    \item \texttt{ui/theme} – definiuje motyw graficzny aplikacji (kolory, typografia, styl komponentów UI).
+\end{itemize}
+Aplikacja \texttt{HuePi} łączy nowoczesne technologie Androida, takie jak \textbf{Jetpack Compose}, \textbf{MVVM}, \textbf{Retrofit} i \textbf{DataStore}, aby zapewnić wygodne
+sterowanie inteligentnym oświetleniem. Dzięki modularnej budowie kod aplikacji jest czytelny, łatwy do rozwijania i zgodny z najlepszymi praktykami tworzenia aplikacji mobilnych.
+
+\vspace{\baselineskip}
+\noindent Poniżej, w najbliższych podrozdziałach, zostaną omówione poszczególne pliki wchodzące w skład projektu.
+\clearpage
+
+\subsubsection{MainActivity.kt}
+\begin{lstlisting}[language=Kotlin]
+package com.klusio19.huepi
+
+import android.os.Bundle
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import androidx.activity.enableEdgeToEdge
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import androidx.core.view.WindowCompat
+import androidx.navigation.compose.rememberNavController
+import com.klusio19.huepi.navigation.Screen
+import com.klusio19.huepi.navigation.SetupNavGraph
+import com.klusio19.huepi.ui.theme.HuePiTheme
+
+class MainActivity : ComponentActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        installSplashScreen()
+        enableEdgeToEdge()
+        WindowCompat.setDecorFitsSystemWindows(window, false)
+        setContent {
+            HuePiTheme {
+                val navController = rememberNavController()
+                    SetupNavGraph(
+                        startDestination = Screen.Loading,
+                        navController = navController,
+                        context = application
+                    )
+            }
+        }
+    }
+}
+\end{lstlisting}
+Plik \texttt{MainActivity.kt} stanowi główny punkt wejściowy aplikacji \texttt{HuePi}. Jest to jedyna aktywność (\textit{Activity}) w aplikacji, co wynika z zastosowania
+\textbf{Jetpack Compose}, który eliminuje konieczność korzystania z wielu aktywności i zamiast tego pozwala na budowanie całego interfejsu użytkownika w sposób deklaratywny
+w obrębie jednej aktywności. Głównym zadaniem tej klasy jest inicjalizacja interfejsu użytkownika oraz uruchomienie systemu nawigacji pomiędzy ekranami aplikacji.
+Główne zadania \texttt{MainActivity.kt} to:
+\begin{itemize}
+    \item \textbf{Inicjalizacja aplikacji} – ustawienie motywu i uruchomienie głównej zawartości aplikacji.
+    \item \textbf{Zarządzanie nawigacją} – wykorzystanie Jetpack Navigation do obsługi przejść między ekranami.
+    \item \textbf{Obsługa stanu aplikacji} – przekazywanie odpowiednich obiektów \texttt{ViewModel} do ekranów, które tego wymagają.
+\end{itemize}
+
+\subsubsection{NavGraph.kt}
+Plik \texttt{NavGraph.kt} odpowiada za zarządzanie nawigacją w aplikacji \texttt{HuePi}. Wykorzystuje on bibliotekę \textbf{Jetpack Compose Navigation}, dostosowaną do deklaratywnego
+podejścia stosowanego w \textbf{Jetpack Compose}. Ponieważ cała aplikacja działa w jednej aktywności, wszystkie ekrany są obsługiwane dynamicznie w ramach systemu nawigacji.
+
+Plik definiuje główny kontener nawigacyjny \texttt{NavHost}, który przechowuje listę dostępnych ekranów i zarządza ich zmianą. Struktura nawigacji opiera się na koncepcji
+\textbf{grafu nawigacyjnego}, w którym każda ścieżka (route) reprezentuje jeden z ekranów aplikacji. Dzięki temu podejściu przejścia pomiędzy ekranami realizowane są poprzez
+dynamiczne wywoływanie funkcji \texttt{navigate()} na obiekcie \texttt{NavController}, co pozwala na płynną zmianę widoków w aplikacji.
+
+\subsubsection*{Zasada działania}
+Główna funkcja \texttt{SetupNavGraph()} inicjalizuje nawigację, ustawiając ekran startowy oraz rejestrując poszczególne ścieżki. Każdy ekran jest rejestrowany jako osobna
+funkcja rozszerzająca \texttt{NavGraphBuilder}, co pozwala na lepszą organizację kodu.
+
+\begin{lstlisting}[language=Kotlin]
+@Composable
+fun SetupNavGraph(startDestination: Screen, navController: NavHostController, context: Application) {
+    NavHost(navController = navController, startDestination = startDestination) {
+        loadingRoute(context, navController)
+        setupAndConnectRoute(navController)
+        homeRoute(navController)
+        lightRoute(context)
+    }
+}
+\end{lstlisting}
+
+W ramach \texttt{NavHost} rejestrowane są funkcje obsługujące poszczególne ekrany, takie jak:
+\begin{itemize}
+    \item \texttt{loadingRoute()} – obsługuje ekran ładowania i przekierowuje użytkownika do odpowiedniego ekranu po zakończeniu procesu inicjalizacji.
+    \item \texttt{setupAndConnectRoute()} – odpowiada za ekran konfiguracji połączenia z mostkiem Philips Hue i serwerem Raspberry Pi.
+    \item \texttt{homeRoute()} – zarządza ekranem głównym, który wyświetla listę dostępnych żarówek.
+    \item \texttt{lightRoute()} – odpowiada za ekran szczegółów dotyczących konkretnej żarówki, pozwalając użytkownikowi na zmianę jej stanu, jasności i koloru.    
+\end{itemize}
+
+\subsubsection*{Obsługa nawigacji w ekranach}
+Każda z funkcji odpowiadających za poszczególne ekrany implementuje własną logikę nawigacji. Na przykład ekran konfiguracji (\texttt{setupAndConnectRoute()}) reaguje
+na zdarzenie poprawnej walidacji połączenia i po krótkim opóźnieniu przechodzi do ekranu głównego:
+
+\begin{lstlisting}[language=Kotlin]
+fun NavGraphBuilder.setupAndConnectRoute(navController: NavHostController) {
+    composable<Screen.SetupAndConnect> {
+        val viewModel: SetupAndConnectViewModel = viewModel()
+        LaunchedEffect(Unit) {
+            viewModel.navigationEvent.collect { shouldNavigate ->
+                if (shouldNavigate) {
+                    delay(1000L)
+                    navController.navigate(Screen.Home)
+                }
+            }
+        }
+        SetupAndConnectScreen(...)
+    }
+}
+\end{lstlisting}
+
+W innych przypadkach nawigacja może być bardziej dynamiczna – np. ekran szczegółów żarówki (\texttt{lightRoute()}) pobiera argumenty przekazane w ścieżce nawigacyjnej
+(identyfikator żarówki), a następnie inicjalizuje odpowiedni \texttt{ViewModel}:
+
+\begin{lstlisting}[language=Kotlin]
+fun NavGraphBuilder.lightRoute(context: Application) {
+    composable<Screen.LightDetails> { backStackEntry ->
+        val args = backStackEntry.toRoute<Screen.LightDetails>()
+        val viewModelFactory = LightDetailsViewModelFactory(context, args.rid)
+        val viewModel: LightDetailsViewModel = viewModel(factory = viewModelFactory)
+        LightDetailsScreen(...)
+    }
+}
+\end{lstlisting}
+Plik \texttt{NavGraph.kt} odpowiada za zarządzanie ruchem w aplikacji, definiując ścieżki między ekranami i obsługując przejścia. Dzięki zastosowaniu modularnej struktury
+oraz powiązania ekranów z odpowiednimi \texttt{ViewModel}, aplikacja może dynamicznie reagować na zmiany stanu i zapewniać użytkownikowi płynne doświadczenie. Podejście to
+zwiększa elastyczność kodu i pozwala na łatwiejszą rozbudowę w przyszłości.
+
+
+\subsubsection{Screen.kt}
+\begin{lstlisting}[language=Kotlin]
+package com.klusio19.huepi.navigation
+
+import kotlinx.serialization.Serializable
+
+@Serializable
+sealed class Screen {
+    @Serializable
+    data object Loading : Screen()
+
+    @Serializable
+    data object SetupAndConnect : Screen()
+
+    @Serializable
+    data object Home : Screen()
+
+    @Serializable
+    data class LightDetails(val rid: String) : Screen()
+}
+\end{lstlisting}
+Plik \texttt{Screen.kt} definiuje wszystkie ekrany dostępne w aplikacji \texttt{HuePi} i określa ich strukturę w systemie nawigacji. Wykorzystuje do tego \textit{sealed class},
+która grupuje ekrany jako zamknięty zbiór obiektów. Dzięki temu każdy ekran jest jednoznacznie identyfikowalny i łatwy do obsługi w grafie nawigacyjnym.
+
+W pliku wyróżniono cztery ekrany:
+\begin{itemize}
+    \item \texttt{Loading} – ekran ładowania aplikacji,
+    \item \texttt{SetupAndConnect} – ekran konfiguracji połączenia,
+    \item \texttt{Home} – ekran główny, który wyświetla listę żarówek,
+    \item \texttt{LightDetails} – ekran szczegółów żarówki, który wymaga identyfikatora światła jako argumentu.
+\end{itemize}
+Dzięki takiemu podejściu nawigacja w aplikacji jest bardziej czytelna i bezpieczna, a przekazywanie danych między ekranami odbywa się w uporządkowany sposób.
+
+\clearpage
+\subsubsection{RetrofitInstance.kt}
+\begin{lstlisting}[language=Kotlin]
+package com.klusio19.huepi.retrofit
+
+import com.squareup.moshi.Moshi
+import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
+import okhttp3.Interceptor
+import okhttp3.OkHttpClient
+import okhttp3.Request
+import okhttp3.logging.HttpLoggingInterceptor
+import retrofit2.Retrofit
+import retrofit2.converter.moshi.MoshiConverterFactory
+
+object RetrofitInstance {
+    fun getClient(baseUrl: String, raspberryApiKey: String): RaspberryPiAPIService {
+        val moshi = Moshi.Builder()
+            .add(KotlinJsonAdapterFactory())
+            .build()
+
+        val logging = HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
+
+        val okHttpClient = OkHttpClient.Builder()
+            .addInterceptor(logging)
+            .addInterceptor(
+                Interceptor { chain ->
+                    val request: Request = chain.request()
+                        .newBuilder()
+                        .header("api-key", raspberryApiKey)
+                        .build()
+                    chain.proceed(request)
+                }
+            ).build()
+
+        val raspberryPiAPIService: RaspberryPiAPIService by lazy {
+            Retrofit.Builder()
+                .baseUrl(baseUrl)
+                .addConverterFactory(MoshiConverterFactory.create(moshi))
+                .client(okHttpClient)
+                .build()
+                .create(RaspberryPiAPIService::class.java)
+        }
+
+        return raspberryPiAPIService
+    }
+}
+\end{lstlisting}
+Plik \texttt{RetrofitInstance.kt} odpowiada za konfigurację klienta \textbf{Retrofit}, który umożliwia aplikacji \texttt{HuePi} komunikację z serwerem Raspberry Pi. Jest to kluczowy
+element warstwy sieciowej, ponieważ definiuje sposób, w jaki aplikacja wysyła żądania do API i przetwarza odpowiedzi.
+
+\subsubsection*{Funkcjonalność}
+\begin{itemize}
+    \item Tworzy instancję \texttt{Retrofit} z podanym adresem URL i kluczem API serwera Raspberry Pi.
+    \item Używa \textbf{Moshi} jako konwertera do obsługi formatu JSON.
+    \item Dodaje \textbf{Interceptor}, który automatycznie dołącza nagłówek z kluczem API do każdego zapytania.
+    \item Wykorzystuje \textbf{HttpLoggingInterceptor}, który ułatwia debugowanie żądań HTTP.
+\end{itemize}
+
+Plik \texttt{RetrofitInstance.kt} centralizuje konfigurację klienta HTTP, zapewniając jednolite miejsce inicjalizacji połączenia z serwerem. Dzięki temu inne moduły aplikacji mogą łatwo
+korzystać z API bez konieczności każdorazowego definiowania konfiguracji Retrofitu.
+
+
+\subsubsection{RaspberryPiAPIService.kt}
+Plik \texttt{RaspberryPiAPIService.kt} definiuje interfejs API, który umożliwia aplikacji \texttt{HuePi} komunikację z serwerem Raspberry Pi poprzez żądania HTTP. Retrofit wykorzystuje 
+ten interfejs do automatycznego generowania kodu obsługującego połączenia sieciowe, co upraszcza wysyłanie zapytań oraz odbieranie odpowiedzi.
+Interfejs zawiera metody odpowiadające operacjom wykonywanym na inteligentnym oświetleniu Philips Hue, takim jak pobieranie listy żarówek, włączanie i wyłączanie świateł, zmiana jasności
+i kolorów oraz zarządzanie dynamiczną zmianą barwy w zależności od temperatury. Każda metoda korzysta z adnotacji \texttt{@GET}, definiując odpowiednie ścieżki endpointów serwera.
+Dzięki zastosowaniu \texttt{Response<T>}, każda odpowiedź z serwera jest bezpiecznie obsługiwana, umożliwiając łatwą kontrolę poprawności zwracanych danych. Moduł ten stanowi kluczowy
+element warstwy sieciowej aplikacji, zapewniając przejrzystą i efektywną komunikację z serwerem.\\
+Przykładowa metoda inerfejsu:
+\begin{lstlisting}[language=Kotlin]
+@GET("/get-details/{rid}")
+suspend fun getLightBulbDetails(
+    @Path("rid") rid: String
+): Response<LightBulb?>
+\end{lstlisting}
+
+
+\subsubsection{DataStoreManager.kt}
+Plik \texttt{DataStoreManager.kt} odpowiada za przechowywanie i pobieranie danych konfiguracyjnych związanych z połączeniem aplikacji \texttt{HuePi} z serwerem Raspberry Pi. Do tego celu
+wykorzystano \textbf{DataStore Preferences}, które zastępuje starszy mechanizm \textit{SharedPreferences}, oferując bardziej wydajny i bezpieczny sposób zarządzania danymi.\\
+Głównym zadaniem \texttt{DataStoreManager.kt} jest zapis i odczyt kluczowych informacji dotyczących serwera Raspberry Pi:
+\begin{itemize}
+    \item Adres URL serwera – przechowywany, aby użytkownik nie musiał ponownie wpisywać adresu IP przy każdym uruchomieniu aplikacji.
+    \item Klucz API – zapisany lokalnie, aby aplikacja mogła automatycznie uwierzytelniać się przy komunikacji z serwerem.
+\end{itemize}
+
+\subsubsection*{Zasada działania}
+Plik definiuje obiekt \texttt{preferenceDataStore}, który jest powiązany z kontekstem aplikacji i zarządza przechowywaniem preferencji w lokalnym magazynie danych. Dzięki temu aplikacja może zapisywać
+i odczytywać ustawienia nawet po jej ponownym uruchomieniu.
+
+Przykładowo, funkcja zapisu adresu serwera działa w następujący sposób:
+
+\begin{lstlisting}[language=Kotlin]
+suspend fun saveRaspberryPiUrl(ipAddressToSave: String) {
+    context.preferenceDataStore.edit { preferences ->
+        preferences[RASPBERRY_PI_URL] = ipAddressToSave
+    }
+}
+\end{lstlisting}
+Podczas zapisu dane są umieszczane w \texttt{DataStore}, a każda wartość jest powiązana z unikalnym kluczem. W podobny sposób działa pobieranie wartości – aplikacja sprawdza, czy adres URL
+został zapisany, a jeśli nie, zwraca wartość domyślną. Plik \\\texttt{DataStoreManager.kt} pozwala na automatyczne zapamiętywanie danych o serwerze Raspberry Pi, dzięki czemu użytkownik nie musi
+ręcznie wprowadzać ich przy każdym uruchomieniu aplikacji. Jest to kluczowe dla wygody użytkowania oraz zapewnienia płynnej komunikacji z systemem inteligentnego oświetlenia.
 
 
 
+\subsubsection{Ekran SetupAndConnect}
+Ekran \texttt{SetupAndConnect} jest pierwszym ekranem, na który trafia użytkownik po uruchomieniu aplikacji \texttt{HuePi}. Jego głównym celem jest umożliwienie wprowadzenia danych niezbędnych
+do nawiązania połączenia z serwerem uruchomionym na \textbf{Raspberry Pi}, który zarządza mostkiem Philips Hue. Użytkownik musi podać:
+\begin{itemize}
+    \item Adres IP wraz z numerem portu serwera Raspberry Pi.
+    \item Klucz API wymagany do autoryzacji żądań wysyłanych do serwera.
+\end{itemize}
+Po wprowadzeniu tych danych aplikacja sprawdza poprawność podanych wartości, zapisuje je lokalnie przy użyciu \textbf{DataStore Preferences} i próbuje nawiązać połączenie z serwerem.
 
+\begin{figure}[H]
+    \centering
+    \hypertarget{fig:setup-screen}{}
+    \includegraphics[scale=0.2]{figures/setup_screen.png}
+    \caption{Ekran setup\_and\_connect}
+    \label{fig:błędne-dane-setup-screen}
+\end{figure}
 
+\subsubsection*{Struktura plików ekranu}
+\noindent Ekran został podzielony na trzy pliki:
+\begin{itemize}
+    \item \textbf{\texttt{SetupAndConnectScreen.kt}} – główny kontener ekranu, który ustawia tło aplikacji i wywołuje funkcję odpowiedzialną za zawartość interfejsu.
+    \item \textbf{\texttt{SetupAndConnectContent.kt}} – definiuje wygląd i układ komponentów interfejsu użytkownika, takich jak pola tekstowe i przyciski.
+    \item \textbf{\texttt{SetupAndConnectViewModel.kt}} – zarządza logiką biznesową, w tym walidacją danych wejściowych oraz nawiązywaniem połączenia z serwerem.
+\end{itemize}
+Podział ten zgodny jest z architekturą \textit{MVVM} (Model-View-ViewModel), która pozwala na oddzielenie logiki aplikacji od interfejsu użytkownika, co ułatwia testowanie i utrzymanie kodu.
 
+\subsubsection*{Walidacja danych wejściowych}
+\noindent Aby uniknąć błędów użytkownika, ekran zawiera prostą walidację danych. Weryfikowane są dwa kluczowe elementy:
+\begin{itemize}
+    \item Adres IP i port – musi składać się z co najmniej 13 znaków.
+    \item Klucz API – nie może być pusty.
+\end{itemize}
 
+\noindent Przykładowa implementacja walidacji znajduje się w pliku \\\texttt{SetupAndConnectViewModel.kt}:
+\begin{lstlisting}[language=Kotlin]
+fun validateInputs() {
+    _isIpAddressValid.value = _ipNumbersTextValue.value.length >= 13
+    _isApiKeyValid.value = _apiKeyTextValue.value.isNotBlank()
+}
+\end{lstlisting}
 
+\noindent Jeśli podane wartości są nieprawidłowe, użytkownik otrzymuje odpowiedni komunikat błędu.
 
+\subsubsection*{Proces łączenia z serwerem}
+\noindent Po poprawnym wprowadzeniu danych użytkownik naciska przycisk „Connect”, który inicjuje proces weryfikacji połączenia z serwerem. Aplikacja:
+\begin{enumerate}
+    \item Formatuje podany adres IP do poprawnej postaci.
+    \item Tworzy instancję klienta Retrofit do komunikacji z serwerem.
+    \item Wysyła żądanie testowe sprawdzające dostępność serwera.
+    \item Jeśli połączenie się powiedzie, zapisuje adres i klucz API w lokalnym magazynie danych (\texttt{DataStoreManager.kt}).
+    \item Przekierowuje użytkownika do ekranu głównego aplikacji.
+\end{enumerate}
 
+\noindent Fragment kodu odpowiedzialny za wysyłanie żądania testowego:
+\begin{lstlisting}[language=Kotlin]
+val response = raspberryPiAPIService.checkConnection()
+if (response.isSuccessful && response.body() != null) {
+    if (response.body()!!.message == "OK") {
+        val saveUrlDeferred = async { dataStoreManager.saveRaspberryPiUrl(formattedRaspberryUrl) }
+        val saveApiKeyDeferred = async { dataStoreManager.saveRaspberryPiApiKey(apiKey) }
+        saveUrlDeferred.await()
+        saveApiKeyDeferred.await()
+        _navigationEvent.send(true)
+    }
+}
+\end{lstlisting}
 
+\subsubsection*{Interfejs użytkownika}
+\noindent Ekran zawiera dwa pola tekstowe do wprowadzania adresu IP oraz klucza API, a także przycisk „Connect”, który inicjuje proces łączenia. W przypadku błędnych danych użytkownik
+otrzymuje komunikaty o błędach wyświetlane pod polami tekstowymi.
+
+\begin{figure}[H]
+    \centering
+    \hypertarget{fig:błędne-dane-setup-screen}{}
+    \includegraphics[scale=0.25]{figures/setup_screen_wrong_input.png}
+    \caption{Błędne dane w polach tekstowych}
+    \label{fig:błędne-dane-setup-screen}
+\end{figure}
+
+\clearpage
+\noindent Podczas nawiązywania połączenia przycisk zmienia się w animowany wskaźnik postępu, co sygnalizuje użytkownikowi trwającą operację.\\
+Ekran \texttt{SetupAndConnect} jest kluczowym elementem aplikacji, ponieważ pozwala na nawiązanie połączenia z serwerem Raspberry Pi, bez którego dalsze funkcjonalności aplikacji nie byłyby
+dostępne. Dzięki zastosowaniu walidacji danych oraz przechowywaniu konfiguracji w \textbf{DataStore Preferences}, użytkownik nie musi każdorazowo wprowadzać adresu IP i klucza API, co znacząco
+poprawia wygodę korzystania z aplikacji.
 
 
 \clearpage
+\subsubsection{Ekran Home}
+Ekran \texttt{Home} pełni rolę głównego widoku aplikacji \texttt{HuePi}, w którym użytkownik może przeglądać listę dostępnych żarówek Philips Hue. Wyświetlane informacje obejmują nazwę żarówki,
+jej aktualny kolor, poziom jasności oraz stan (włączona/wyłączona). Użytkownik ma również możliwość odświeżenia listy urządzeń oraz przejścia do ekranu szczegółów konkretnej żarówki.
 
-\section{Podsumowanie i wnioski końcowe}
+\begin{figure}[H]
+    \centering
+    \hypertarget{fig:home-screen}{}
+    \includegraphics[scale=0.22]{figures/menu_screen.png}
+    \caption{Ekran z listą żarówek}
+    \label{fig:home-screen}
+\end{figure}
 
-1 $\div$ 3 stron merytorycznie podsumowanie najważniejszych elementów pracy oraz wnioski wynikające z osiągniętego celu pracy. Proponowane zalecenia i modyfikacje oraz rozwiązania będące wynikiem realizowanej pracy.
+\subsubsection*{Struktura plików ekranu}
+\noindent Ekran został podzielony na trzy główne pliki:
+\begin{itemize}
+    \item \textbf{\texttt{HomeScreen.kt}} – główny kontener ekranu, który obsługuje układ interfejsu oraz funkcję \textit{pull-to-refresh}.
+    \item \textbf{\texttt{HomeContent.kt}} – definiuje wygląd i zachowanie listy żarówek, obsługuje przypadek, gdy lista jest pusta.
+    \item \textbf{\texttt{HomeViewModel.kt}} – zarządza pobieraniem listy żarówek oraz ich stanem, wykorzystując do tego \textbf{Retrofit} i \textbf{DataStore Preferences}.
+\end{itemize}
 
-Ostatni akapit podsumowania musi zawierać wykaz własnej pracy dyplomanta i zaczynać się od sformułowania: „Autor za własny wkład pracy uważa: \ldots”.
+\noindent Podział ten zgodny jest z architekturą \textit{MVVM} (Model-View-ViewModel), dzięki czemu logika biznesowa jest odseparowana od interfejsu użytkownika, co poprawia czytelność kodu
+i ułatwia jego testowanie.
+
+\subsubsection*{Interfejs użytkownika}
+\noindent Lista żarówek wyświetlana jest w postaci \texttt{LazyColumn}, co pozwala na efektywne renderowanie długich list. Jeśli lista jest pusta, użytkownik widzi komunikat „No light bulbs found!”.
+Każdy element listy wyświetlany jest przy użyciu komponentu \texttt{LightBulbItem}, który prezentuje informacje o stanie żarówki.
+
+\begin{lstlisting}[language=Kotlin]
+LazyColumn(
+    modifier = modifier.fillMaxSize(),
+    contentPadding = PaddingValues(12.dp),
+    verticalArrangement = Arrangement.spacedBy(12.dp)
+) {
+    items(lightBulbsList) { lightBulb ->
+        LightBulbItem(
+            color = Color(lightBulb.color.toColorInt()),
+            lightBulbName = lightBulb.name,
+            brightnessLevel = lightBulb.brightness,
+            lightBulbOn = lightBulb.isOn,
+            rid = lightBulb.rid,
+            onLightBulbClicked = onLightBulbClicked
+        )
+    }
+}
+\end{lstlisting}
+
+\noindent Ekran obsługuje także mechanizm \textit{pull-to-refresh}, który umożliwia użytkownikowi ręczne odświeżenie listy żarówek.
+
+\begin{lstlisting}[language=Kotlin]
+PullToRefreshBox(
+    state = pullToRefreshState,
+    isRefreshing = isRefreshing,
+    onRefresh = onRefresh,
+    modifier = Modifier.fillMaxSize()
+) {
+    when {
+        isRefreshing -> {}
+        lightBulbsList.isNullOrEmpty() -> {
+            Box(contentAlignment = Alignment.Center, modifier = Modifier.fillMaxSize()) {
+                Text("No light bulbs found!", style = MaterialTheme.typography.bodyLarge)
+            }
+        }
+        else -> {
+            HomeContent(
+                lightBulbsList = lightBulbsList,
+                onLightBulbClicked = onLightBulbClicked,
+                modifier = Modifier
+                    .statusBarsPadding()
+                    .navigationBarsPadding()
+            )
+        }
+    }
+}
+\end{lstlisting}
+
+\subsubsection*{Pobieranie listy żarówek}
+\noindent Dane o żarówkach pobierane są z serwera Raspberry Pi poprzez moduł \textbf{Retrofit}. Plik \texttt{HomeViewModel.kt} zarządza pobieraniem listy świateł i ich przechowywaniem w stanie aplikacji.
+Aby uniknąć ponownego wpisywania adresu IP i klucza API, dane te są odczytywane z \textbf{DataStore Preferences}.
+
+\begin{lstlisting}[language=Kotlin]
+fun fetchLightBulbs() {
+    viewModelScope.launch {
+        _isRefreshing.value = true
+        try {
+            val raspberryIpAddress = dataStoreManager.getRaspberryPiUrl()
+            val raspberryApiKey = dataStoreManager.getRaspberryPiApiKey()
+
+            val raspberryPiAPIService = RetrofitInstance.getClient(
+                baseUrl = raspberryIpAddress,
+                raspberryApiKey = raspberryApiKey
+            )
+
+            val lightBulbs = raspberryPiAPIService.getAllLightsDetails().body()
+            _lightBulbsList.value = lightBulbs
+        } catch (e: Exception) {
+            _lightBulbsList.value = null
+        } finally {
+            _isRefreshing.value = false
+        }
+    }
+}
+\end{lstlisting}
+
+\noindent Ekran \texttt{HomeScreen} stanowi główne centrum sterowania dla użytkownika. Pozwala na szybkie przeglądanie aktualnego stanu oświetlenia oraz nawigowanie do ekranu szczegółów konkretnej
+żarówki. Dzięki zastosowaniu mechanizmu \textit{pull-to-refresh}, użytkownik ma pełną kontrolę nad aktualizacją wyświetlanych danych.
+
+
+\subsubsection{Ekran LightDetails}
+Ekran \texttt{LightDetailsScreen} umożliwia użytkownikowi sterowanie wybraną żarówką Philips Hue. Po przejściu z ekranu głównego użytkownik ma dostęp do szczegółowych informacji o żarówce oraz
+może zmieniać jej stan, jasność, kolor i włączyć tryb dynamicznej zmiany barwy w zależności od temperatury otoczenia.
+
+\subsubsection*{Struktura plików ekranu}
+\noindent Ekran został podzielony na trzy pliki:
+\begin{itemize}
+    \item \textbf{\texttt{LightDetailsScreen.kt}} – główny kontener ekranu, zarządza układem interfejsu i obsługuje mechanizm odświeżania danych.
+    \item \textbf{\texttt{LightDetailsContent.kt}} – definiuje widok ekranu, zawierający komponenty do sterowania żarówką (przełącznik zasilania, suwak jasności, wybór koloru).
+    \item \textbf{\texttt{LightDetailsViewModel.kt}} – zarządza pobieraniem danych o żarówce oraz obsługą interakcji użytkownika, np. wysyłaniem żądań do serwera Raspberry Pi w celu zmiany ustawień światła.
+\end{itemize}
+
+\noindent Podział ten zgodny jest z architekturą \textit{MVVM} (Model-View-ViewModel), co zapewnia oddzielenie logiki biznesowej od warstwy interfejsu użytkownika.
+
+\subsubsection*{Interfejs użytkownika}
+\noindent Główne elementy ekranu to:
+\begin{itemize}
+    \item \textbf{Przełącznik zasilania} – umożliwia włączenie i wyłączenie żarówki.
+    \item \textbf{Suwak jasności} – pozwala dostosować poziom jasności światła.
+    \item \textbf{Koło wyboru koloru} – umożliwia użytkownikowi zmianę barwy światła przy użyciu selektora kolorów.
+    \item \textbf{Tryb zmiany barwy w zależności od temperatury} – opcjonalna funkcja, która pozwala dostosować kolor światła na podstawie danych z czujnika temperatury.
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \hypertarget{fig:light-details-screen}{}
+    \includegraphics[scale=0.25]{figures/light_detail_screen.png}
+    \caption{Ekran ustawień danej żarówki}
+    \label{fig:light-details-screen}
+\end{figure}
+
+\noindent Dodatkowo użytkownik może odświeżyć dane o żarówce za pomocą ikony odświeżania w górnej części ekranu.
+
+\subsubsection*{Pobieranie danych o żarówce}
+\noindent Dane o żarówce są pobierane z serwera Raspberry Pi za pomocą \textbf{Retrofit}. Widok aktualizuje się dynamicznie na podstawie zmian w stanie aplikacji.
+
+\begin{lstlisting}[language=Kotlin]
+fun fetchLightBulb() {
+    viewModelScope.launch {
+        _isFetchingData.value = true
+        try {
+            raspberryIpAddress = dataStoreManager.getRaspberryPiUrl()
+            raspberryApiKey = dataStoreManager.getRaspberryPiApiKey()
+
+            raspberryPiAPIService = RetrofitInstance.getClient(
+                baseUrl = raspberryIpAddress,
+                raspberryApiKey = raspberryApiKey
+            )
+
+            val lightBulb = raspberryPiAPIService.getLightBulbDetails(rid).body()
+            _lightBulb.value = lightBulb
+        } catch (e: Exception) {
+            _lightBulb.value = null
+        } finally {
+            _isFetchingData.value = false
+        }
+    }
+}
+\end{lstlisting}
+
+\subsubsection*{Obsługa zmiany jasności i koloru}
+\noindent Użytkownik może dostosować jasność oraz kolor światła za pomocą odpowiednich kontrolek interfejsu. Każda zmiana jest natychmiast wysyłana do serwera.
+
+\begin{lstlisting}[language=Kotlin]
+fun changeBrightness(level: Float) {
+    viewModelScope.launch {
+        val response = raspberryPiAPIService.setBrightness(
+            rid = rid,
+            level = level
+        )
+    }
+}
+
+fun setColor(h: Float, s: Float, v: Float) {
+    viewModelScope.launch {
+        val response = raspberryPiAPIService.setColor(
+            rid = rid,
+            h = h,
+            s = s,
+            v = v
+        )
+    }
+}
+\end{lstlisting}
+
+\subsubsection*{Tryb zmiany barwy w zależności od temperatury}
+\noindent Jedną z kluczowych funkcji ekranu \texttt{LightDetailsScreen} jest możliwość aktywowania trybu dynamicznej zmiany barwy światła w zależności od temperatury otoczenia. Funkcja ta została
+zaimplementowana w formie \textbf{okna dialogowego}, które pojawia się po naciśnięciu przycisku \texttt{Temp to color}. 
+
+\begin{figure}[H]
+    \centering
+    \hypertarget{fig:temp-to-color-dialog}{}
+    \includegraphics[scale=0.2]{figures/temp_to_color_screen1.png}
+    \caption{Okno dialogowe trybu wyświetlania koloru na podstawie temperatury}
+    \label{fig:temp-to-color-dialog}
+\end{figure}
+
+Po otwarciu okna użytkownik musi ustawić następujące parametry:
+\begin{itemize}
+    \item \textbf{Minimalna temperatura} – określa najniższą wartość temperatury, przy której światło ma przyjąć wybrany kolor.
+    \item \textbf{Maksymalna temperatura} – określa najwyższą wartość temperatury, przy której światło ma przyjąć inny wybrany kolor.
+    \item \textbf{Kolor dla minimalnej temperatury} – użytkownik wybiera kolor, który będzie wyświetlany, gdy temperatura osiągnie wartość minimalną.
+    \item \textbf{Kolor dla maksymalnej temperatury} – użytkownik wybiera kolor, który będzie wyświetlany, gdy temperatura osiągnie wartość maksymalną.
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \hypertarget{fig:temp-to-color-dialog2}{}
+    \includegraphics[scale=0.2]{figures/temp_to_color_screen2.png}
+    \caption{Okno dialogowe trybu wyświetlania koloru na podstawie temperatury z uzupełnionymi parametrami}
+    \label{fig:temp-to-color-dialog2}
+\end{figure}
+
+\noindent Aby uprościć konfigurację, użytkownik wybiera kolory na podstawie jednego parametru – wartości \textbf{H (Hue)} z przestrzeni barw \textbf{HSV}. Oznacza to, że nie wybiera on pełnego koloru RGB,
+lecz jedynie jego pozycję na palecie barw HSV.
+
+\subsubsection*{Sposób obliczania koloru}
+\noindent Gdy funkcja zostanie aktywowana, kolor światła będzie zmieniał się w sposób płynny pomiędzy wartościami wybranymi przez użytkownika. Wartość koloru jest obliczana na podstawie aktualnej
+temperatury otoczenia przy użyciu \textbf{interpolacji liniowej} w przestrzeni HSV. Interpolacja odbywa się zgodnie z ruchem wskazówek zegara na palecie HSV. Oznacza to, że jeśli użytkownik wybierze
+dla temperatury minimalnej kolor czerwony (\textit{H = 0.0}) i dla temperatury maksymalnej kolor zielony (\textit{H = 0.33}), to w temperaturach pośrednich kolor będzie stopniowo przesuwał się
+przez pomarańczowy, żółty aż do zielonego.
+
+\begin{lstlisting}[language=Kotlin]
+fun startTempToColorTask(hueMin: Float, hueMax: Float, tempMin: Float, tempMax: Float) {
+    viewModelScope.launch {
+        val response = raspberryPiAPIService.startTempToColorTask(
+            rid = rid,
+            hueMin = hueMin,
+            hueMax = hueMax,
+            tempMin = tempMin,
+            tempMax = tempMax
+        )
+    }
+}
+\end{lstlisting}
+
+\noindent Wartości te są przesyłane do serwera Raspberry Pi, który na podstawie odczytów z czujnika temperatury oblicza i aktualizuje kolor światła w czasie rzeczywistym.
+
+Tryb dynamicznej zmiany koloru w zależności od temperatury pozwala użytkownikowi na automatyczne dostosowanie oświetlenia do warunków otoczenia. Dzięki intuicyjnemu interfejsowi,
+użytkownik może łatwo skonfigurować zakres temperatur i odpowiadające im kolory, co sprawia, że światło zmienia się płynnie zgodnie z ruchem wskazówek zegara na palecie HSV. Jest to
+zaawansowana funkcjonalność, która wprowadza dodatkowy poziom automatyzacji w ekosystemie Philips Hue.
+
+\clearpage
+
+\section{Podsumowanie}
+Projekt \texttt{HuePi} to kompleksowe rozwiązanie umożliwiające użytkownikowi sterowanie inteligentnym oświetleniem Philips Hue poprzez serwer uruchomiony na \textbf{Raspberry Pi}.
+System został zaprojektowany w sposób modularny, wykorzystując nowoczesne technologie zarówno po stronie serwera, jak i aplikacji mobilnej.
+
+\subsection{Główne założenia projektu}
+\noindent Głównym celem projektu było stworzenie aplikacji, która pozwala użytkownikowi na wygodne zarządzanie oświetleniem w sposób bardziej elastyczny niż przy użyciu standardowej aplikacji Philips Hue.
+Kluczowe założenia obejmowały:
+\begin{itemize}
+    \item Możliwość sterowania światłami Hue poprzez dedykowany serwer działający na Raspberry Pi.
+    \item Rozszerzenie funkcjonalności ekosystemu Hue o obsługę czujnika temperatury BME280.
+    \item Intuicyjny interfejs użytkownika, bazujący na \textbf{Jetpack Compose} i wzorcu \textbf{MVVM}.
+    \item Implementację dynamicznej zmiany koloru światła w zależności od temperatury otoczenia.
+    \item Wsparcie dla pamięci lokalnej (\textbf{DataStore Preferences}), pozwalającej na przechowywanie konfiguracji połączenia.
+\end{itemize}
+
+\subsection{Technologie użyte w projekcie}
+\noindent W projekcie wykorzystano szereg nowoczesnych technologii, które zapewniają wysoką wydajność i skalowalność systemu:
+\begin{itemize}
+    \item \textbf{FastAPI} – framework użyty do implementacji serwera REST API na Raspberry Pi.
+    \item \textbf{Retrofit} – biblioteka odpowiedzialna za komunikację aplikacji mobilnej z serwerem.
+    \item \textbf{Jetpack Compose} – nowoczesny system budowy interfejsu użytkownika w aplikacji mobilnej.
+    \item \textbf{DataStore Preferences} – mechanizm zapisywania konfiguracji aplikacji na urządzeniu mobilnym.
+    \item \textbf{mDNS} – technologia użyta do automatycznego wykrywania mostka Philips Hue w sieci lokalnej.
+\end{itemize}
+
+\subsection{Architektura systemu}
+\noindent Projekt został podzielony na dwie główne części:
+\begin{itemize}
+    \item \textbf{Serwer na Raspberry Pi} – zarządza połączeniem z mostkiem Hue, obsługuje czujnik temperatury i udostępnia API do komunikacji z aplikacją mobilną.
+    \item \textbf{Aplikacja mobilna} – pozwala użytkownikowi na sterowanie światłami, przechowuje konfigurację połączenia i dynamicznie pobiera dane z serwera.
+\end{itemize}
+
+\noindent Struktura kodu w obu częściach została zaprojektowana zgodnie z dobrymi praktykami programistycznymi, co zapewnia wysoką czytelność i możliwość dalszej rozbudowy systemu.
+
+\subsection{Funkcjonalności aplikacji}
+\noindent Aplikacja mobilna dostarcza użytkownikowi bogaty zestaw funkcji:
+\begin{itemize}
+    \item \textbf{Łączenie z serwerem} – użytkownik może skonfigurować połączenie poprzez podanie adresu IP i klucza API.
+    \item \textbf{Lista żarówek} – wyświetlanie wszystkich dostępnych świateł w ekosystemie Hue.
+    \item \textbf{Sterowanie żarówką} – możliwość włączania i wyłączania światła, regulacji jasności oraz zmiany koloru.
+    \item \textbf{Dynamiczna zmiana koloru} – tryb, w którym kolor światła dostosowuje się do temperatury otoczenia.
+    \item \textbf{Odświeżanie danych} – użytkownik może ręcznie aktualizować informacje o dostępnych żarówkach i ich stanie.
+\end{itemize}
+
+\subsection{Dalszy rozwój}
+\noindent Projekt \texttt{HuePi} udowodnił, że istnieje możliwość rozszerzenia ekosystemu Philips Hue o nowe funkcjonalności, które nie są dostępne w natywnej aplikacji producenta. Dzięki wykorzystaniu
+serwera pośredniczącego na Raspberry Pi możliwe jest wprowadzenie niestandardowych funkcji, takich jak zmiana koloru światła w zależności od temperatury. Możliwości dalszego rozwoju projektu obejmują:
+\begin{itemize}
+    \item Wprowadzenie harmonogramów oświetlenia na podstawie danych z czujników.
+    \item Integrację z dodatkowymi urządzeniami z ekosystemu Philips Hue 
+    \item Optymalizację komunikacji między aplikacją a serwerem poprzez WebSockety zamiast REST API.
+    \item Wsparcie dla sterowania głosowego przy użyciu asystentów, takich jak Google Assistant czy Alexa.
+\end{itemize}
+
+\subsection{Wnioski}
+Projekt \texttt{HuePi} to nowoczesne rozwiązanie, które łączy elastyczność systemów inteligentnego oświetlenia z możliwościami rozszerzonej automatyki domowej. Dzięki dobrze zaprojektowanej
+architekturze, modularności kodu oraz zastosowaniu nowoczesnych technologii, aplikacja zapewnia intuicyjne i wygodne sterowanie oświetleniem Philips Hue. W przyszłości projekt może zostać rozwinięty
+o dodatkowe funkcje, co jeszcze bardziej zwiększy jego użyteczność w codziennym użytkowaniu.
+
 
 \clearpage
 
 \section*{Załączniki}
 \addcontentsline{toc}{section}{Załączniki}
 
-Według potrzeb zawarte i uporządkowane uzupełnienie pracy o dowolny materiał źródłowy (wydruk programu komputerowego, dokumentacja kons\-truk\-cyj\-no-\-tech\-no\-lo\-gicz\-na, konstrukcja modelu -- makiety -- urządzenia, instrukcja obsługi urządzenia lub stanowiska laboratoryjnego, zestawienie wyników pomiarów i obliczeń, informacyjne materiały katalogowe itp.).
-
+Link do repozytorium projektu \url{https://github.com/Klusio19/HuePi}
 
 \clearpage
 
@@ -1015,13 +1714,16 @@ Według potrzeb zawarte i uporządkowane uzupełnienie pracy o dowolny materiał
 
 \begin{thebibliography}{4}
     \bibitem{popularność-smart-home} https://www.statista.com/forecasts/887613/number-of-smart-homes-in-the-smart-home-market-in-the-world
+    \bibitem{dokumentacja-philips-hue-app} https://www.philips-hue.com/pl-pl/explore-hue/apps/bridge
+    \bibitem{dokumentacja-home-assistant} https://www.home-assistant.io/docs/automation/
+    \bibitem{dokumentacja-google-home} https://home.google.com/about-google-home/
     \bibitem{bme280-datasheet} https://www.mouser.com/datasheet/2/783/BST-BME280-DS002-1509607.pdf
+    \bibitem{fastapi-automatyczna-dokumentacja} https://fastapi.tiangolo.com/\#interactive-api-docs
     \bibitem{kotlin-data-wydania} https://kotlinlang.org/docs/faq.html
     \bibitem{kotlin-popularność} https://developer.android.com/kotlin
-    \bibitem{Jakubczyk1997} Jakubczyk T., Klette A.: Pomiary w akustyce. WNT, Warszawa 1997.
-    \bibitem{Barski2011} Barski S.: Modele transmitancji. Elektronika praktyczna, nr 7/2011, str. 15-18.
-    \bibitem{dokum} Czujnik S200. Dokumentacja techniczno-ruchowa. Lumel, Zielona Góra, 2001.
-    \bibitem{Pawluk2001} Pawluk K.: Jak pisać teksty techniczne poprawnie, Wiadomości Elektrotechniczne, Nr 12, 2001, str. 513-515.
+    \bibitem{jetpack-compose-mniej-kodu} https://developer.android.com/develop/ui/compose/why-adopt\#less-code
+    \bibitem{retrofit} https://square.github.io/retrofit/
+
 \end{thebibliography}
 
 \clearpage
